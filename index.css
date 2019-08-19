@@ -1,0 +1,227 @@
+
+/*----------------------------------- Video */
+.video-container {
+    justify-items: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#videoIntro {
+    background-size: cover;
+    background-position: center center;
+    background-image: url(assets/video/intro.mp4);
+    background-color: black;
+    position: fixed;
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 100%;
+    transition: ease-in-out 1.5s;
+    -webkit-transition: ease-in-out 1.5s;
+    -moz-transition: ease-in-out 1.5s;
+    -ms-transition: ease-in-out 1.5s;
+    -o-transition: ease-in-out 1.5s;
+    z-index: -1;
+    animation-delay: 3s;
+    animation: fadeIn 4s;
+    -webkit-animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*----------------------------------- Logo  */
+
+.logo-container {
+    color: transparent;
+    display: inline-block;
+    position: fixed;
+    justify-content: center;
+    top: 10%;
+    max-width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    /*border: solid 2px;
+    border-color: aliceblue;*/
+}
+
+
+#logo-button {
+    background-color: rgba(0, 0, 0, 0.411);
+    display: inline-block;
+    margin: 0;
+    font-family: 'Julius Sans One', monospace;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 6px;
+    font-stretch: expanded;
+    color: rgb(239, 147, 147);
+    border: solid 1px;
+    border-color: rgb(239, 147, 147);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    transition: ease-in-out 1s;
+    -webkit-transition: ease-in-out 1s;
+    -moz-transition: ease-in-out 1s;
+    -ms-transition: ease-in-out 1s;
+    -o-transition: ease-in-out 1s;
+}
+
+/*--------------------------------- Entries  */
+.entry-container {
+    background-color: transparent;
+    display: inline-block;
+    position: fixed;
+    justify-items: center;
+    width: 100%;
+    top: 70%;
+    
+}
+
+.art-container {
+    /*background-color: aquamarine;
+    border: solid 2px;
+    border-color: aliceblue;*/
+    height: 5em;
+}
+
+.and-container {
+    /*background-color: rgb(76, 211, 22);
+    border: solid 2px;
+    border-color: aliceblue;*/
+    height: 5em;
+}
+
+.business-container {
+    /*background-color: rgb(164, 31, 182);
+    border: solid 2px;
+    border-color: aliceblue;*/
+    height: 5em;
+    overflow: hidden;
+}
+
+
+#entry-art {
+    font-family: 'Julius Sans One', monospace;
+    text-decoration: none;
+    color: rgb(224, 162, 219);
+    letter-spacing: 6px;
+    font-weight: 400;
+    font-size: 2em;
+    padding-top: 0.5em;
+    margin: 0;
+    transition: ease-in-out 1s;
+    -webkit-transition: ease-in-out 1s;
+    -moz-transition: ease-in-out 1s;
+    -ms-transition: ease-in-out 1s;
+    -o-transition: ease-in-out 1s;
+}
+
+#and-sign {
+    font-family: 'Julius Sans One', monospace;
+    text-decoration: none;
+    color: rgb(239, 147, 147);
+    font-weight: 200;
+    font-size: 3em;
+    padding-top: 0.3em;
+    margin: 0;
+    transition: ease-in-out 1s;
+    -webkit-transition: ease-in-out 1s;
+    -moz-transition: ease-in-out 1s;
+    -ms-transition: ease-in-out 1s;
+    -o-transition: ease-in-out 1s;
+}
+
+#entry-business {
+    font-family: 'Julius Sans One', monospace;
+    text-decoration: none;
+    color: rgb(174, 152, 224);
+    letter-spacing: 6px;
+    font-weight: 400;
+    font-size: 2em;
+    padding-top: 0.5em;
+    margin: 0;
+    transition: ease-in-out 1s;
+    -webkit-transition: ease-in-out 1s;
+    -moz-transition: ease-in-out 1s;
+    -ms-transition: ease-in-out 1s;
+    -o-transition: ease-in-out 1s;
+}
+
+/* Button Hover Zoom effect was taken from https://w3bits.com/css-image-hover-zoom/, with 
+cortesy to Rahul*/
+
+/*--------------------------------- Hover Zoom Effect */  */
+.business-container button {
+    transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -ms-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+}
+.business-container:hover button {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+.art-container button {
+    transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -ms-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+}
+.art-container:hover button {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+.logo-container button {
+    transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -ms-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+}
+/*.logo-container:hover button {
+    transform
+}*/
+
+/* hover.css hover, hover name fade------ Logo hover    */
+.hvr-fade {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    -webkit-transform: perspective(1px) translateZ(0);
+    -moz-transform: perspective(1px) translateZ(0);
+    -ms-transform: perspective(1px) translateZ(0);
+    -o-transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    transition-property: color, background-color;
+}
+
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+    background-color:  rgb(239, 147, 147);
+    color: transparent;
+}
