@@ -4,6 +4,27 @@
 
 body {
     background-color: black;
+    scroll-behavior: smooth;
+}
+
+
+/* -------------------------------- Parallax  */
+
+/*.aboutWrapper {
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+}*/
+
+#aboutPlx {
+    background-image: url(assets/images/maskoff.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -2;
+
 }
 
 
@@ -11,6 +32,12 @@ body {
 
 
 /* -------------------------------- Content  */
+/*  About   */
+/*Space above*/
+.abouTop {
+    height: 300px;
+}
+
 .title h1 {
     font-family: 'Julius Sans One', monospace;
     color: rgb(239, 147, 147);
