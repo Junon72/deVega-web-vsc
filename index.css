@@ -35,11 +35,38 @@
     -o-transition: ease-in-out 1.5s;
     z-index: -1;
     animation-delay: 3s;
-    animation: fadeIn 4s;
-    -webkit-animation: fadeIn 4s;
+    animation: fadeInOut 4s;
+    -webkit-animation: fadeInOut 4s;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInOut {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInOut {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInOut {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInOut {
     from{
         opacity: 0;
     }
@@ -65,10 +92,8 @@
     justify-content: center;
     top: 10%;
     max-width: 100%;
-    padding-left: 0;
+    left: 0;
     margin-left: 0;
-    /*border: solid 2px;
-    border-color: aliceblue;*/
 }
 
 
@@ -109,23 +134,14 @@
 }
 
 .art-container {
-    /*background-color: aquamarine;
-    border: solid 2px;
-    border-color: aliceblue;*/
     height: 5em;
 }
 
 .and-container {
-    /*background-color: rgb(76, 211, 22);
-    border: solid 2px;
-    border-color: aliceblue;*/
     height: 5em;
 }
 
 .business-container {
-    /*background-color: rgb(164, 31, 182);
-    border: solid 2px;
-    border-color: aliceblue;*/
     height: 5em;
     overflow: hidden;
 }
@@ -165,7 +181,7 @@
 #entry-business {
     font-family: 'Julius Sans One', monospace;
     text-decoration: none;
-    color: rgb(159, 152, 224);
+    color: rgb(142, 143, 253);
     letter-spacing: 6px;
     font-weight: 400;
     font-size: 2em;
