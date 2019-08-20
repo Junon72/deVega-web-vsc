@@ -1,0 +1,34 @@
+
+
+/* -------------------------------- Backgrounds  */
+
+body {
+    background-color: black;
+}
+
+
+/* -------------------------------- Colors  */
+
+
+/* -------------------------------- Content  */
+.title h1 {
+    font-family: 'Julius Sans One', monospace;
+    color: rgb(239, 147, 147);
+}
+
+.title {
+    display: block;
+    height: 120px;
+}
+
+
+.about-text-content {
+    color: whitesmoke;
+    justify-content: center;
+    font-family: 'Julius Sans One', monospace;
+    font-size: 1em;
+
+}
+
+
+
