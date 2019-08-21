@@ -10,12 +10,15 @@ body {
 
 /* -------------------------------- Parallax  */
 
+/*parallax version1 */
 /*.aboutWrapper {
     display: inline-block;
     position: absolute;
     z-index: -1;
 }*/
-
+.about-wrapper {
+    position: relative;
+}
 #aboutPlx {
     background-image: url(assets/images/maskoff.jpg);
     background-attachment: fixed;
@@ -25,17 +28,59 @@ body {
     overflow: hidden;
     z-index: -2;
 
+}*/
+
+.MainContainerAbout {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
+
+.aboutPlx {
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 100%;
+    transform: translate(-1px) scale(2);
+    -webkit-transform: translate(-1px) scale(2);
+    -moz-transform: translate(-1px) scale(2);
+    -ms-transform: translate(-1px) scale(2);
+    -o-transform: translate(-1px) scale(2);
+    background-image: url(assets/images/maskoff.jpg);
+
+}
 
 /* -------------------------------- Colors  */
 
 
 /* -------------------------------- Content  */
+/*  Home    */
+.home-wrapper { 
+    position: relative;
+    height: 768px;
+}
+/*  Gallery */
+
+/*  Archive */
+
 /*  About   */
-/*Space above*/
-.abouTop {
-    height: 300px;
+
+.about-container {
+    position: absloute;
+    height: 1000px;
+
+}
+
+.aboutTop {
+    height: 480px;
+}
+
+.aboutUnder {
+    height: 30px;
 }
 
 .title h1 {
@@ -43,9 +88,8 @@ body {
     color: rgb(239, 147, 147);
 }
 
-.title {
+title {
     display: block;
-    height: 120px;
 }
 
 
@@ -57,5 +101,4 @@ body {
 
 }
 
-
-
+/*  Contact*/
