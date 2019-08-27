@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Fontawesome CSS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
@@ -24,78 +24,123 @@
 
 
 <body>
-
     <!-- Navigation bar -->
-    <header class="nav-area">
-        <div class="navWrapper">
-            <nav class="navbar navbar-expand-md navbar-dark bg-"></nav>
-
-
-            <!-- Logo -->
-
-            <!-- Menu -->
-        </div>
-    </header>
-    <!-- Home -->
-    <div id="home" class="container-fluid home-container">
-    
-        <!-- Title -->
-        <div class="row justify-content-center">
-                <div class="col-12 mt-50 pt-30 text-center title">
-                    <h1>ACTUAL</h1>
+    <nav class="navbar navbar-default navbar-expand-md navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="logo-container">
+                <a class="navbar-brand btn btn-link logo" id="logo-button" href="index.html">JESUS DE VEGA</a>
                 </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Logo -->
             </div>
+            <div class="navbar-collapse collapse" id="navbar-collapse-menu">
+                <!-- Menu -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#home">Actual</a></li>
+                    <li><a class="page-scroll" href="#gallery">Gallery</a></li>
+                    <li><a class="page-scroll" href="#archive">Archive</a></li>
+                    <li><a class="page-scroll" href="#about">About</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Home section-->
+    <div id="home" class="container-fluid home">
+        <!-- Title 1 -->
+        <div class="row">
+            <div class="col-12 text-center title actual-title">
+                <h1>ACTUAL</h1>
+            </div>
+        </div>
         <!-- Carousel-->
+        <div class="row">
+            <div class="col-12 col-md-6 actual-carousel poster">
+                <p>Poster image</p>
+            </div>
+            <div class="col-12 col-md-6 actual-carousel actual-info">
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ullam hic aut!</p>
+            </div>
+            <a class="btn btn-link see-more" id="see-choreopop" href="choreopop.html">SEE MORE...</a>
+        </div>
     </div>
     <!-- Divider 1 -->
-    <div class="divider-container">
+    <div class="divider divider-one">
         <div class="quotation">
-        </div>
-        <div class="reference">
+            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+            <h2>~ Bob Dylan</h2>
         </div>
     </div>
-    <!-- Gallery -->
-    <section>
-        <!-- Title -->
-        <div class="titel-container">
-            <h1>Gallery</h1>
+    <!-- Gallery section-->
+    <div id="gallery" class="container-fluid gallery">
+        <!-- Title 2 -->
+        <div class="text-center title gallery-title">
+            <h1>GALLERY</h1>
         </div>
-        <!-- Content -->
-    </section>
+        <!-- Gallery card-->
+        <div class="row">
+            <div class="col-12 col-md-6 gallery-card">
+                <p>Gallery image</p>
+            </div>
+            <div class="col-12 col-md-6 carousel actual-info">
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ullam hic aut!</p>
+            </div>
+            <a class="btn btn-link see-more" id="see-gallery" href="choreopop.html">SEE MORE...</a>
+        </div>
+    </div>
     <!-- Divider 2 -->
-    <div class="divider-container">
+    <div class="divider divider-two">
         <div class="quotation">
-        </div>
-        <div class="reference">
+            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+            <h2>~ Bob Ross</h2>
         </div>
     </div>
-    <!-- Archive -->
-    <section>
-        <!-- Title -->
-        <div class="titel-container">
-            <h1>Archive</h1>
+    <!-- Archive section-->
+    <div id="archive" class="container-fluid archive">
+        <!-- Title 3 -->
+        <div class="text-center title archive-title">
+            <h1>ARCHIVE</h1>
         </div>
-        <!-- Carousel-->
-    </section>
+        <!-- Archive carousel-->
+        <div class="row">
+            <div class="col-12 col-md-6 archive-carousel archive-poster">
+                <p>Archive image</p>
+            </div>
+            <div class="col-12 col-md-6 archive-carousel archive-info">
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, nisi adipisci fugit
+                    expedita, dignissimos at officiis mollitia cupiditate eum blanditiis harum dolores rerum
+                    voluptatum inventore quos quidem provident ipsa saepe.</p>
+            </div>
+        </div>
+    </div>
     <!-- Divider 3 -->
-    <div class="divider-container">
+    <div class="divider divider-three">
         <div class="quotation">
-        </div>
-        <div class="reference">
+            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+            <h2>~ Bob</h2>
         </div>
     </div>
-    <!-- About -->
+    <!-- About section-->
     <div id="about" class="about-wrapper">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-xl-8 about" id="aboutPlx">
-                <div class="aboutWrapper">
-                    <!-- Title -->
-                    <div class="container-fluid about-container">
-                        <!--<div class="row aboutTop">
+        <div class="container-fluid about-container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-xl-8 about" id="aboutPlx">
+                    <div class="aboutWrapper">
+                        <!-- Title -->
+                        <div class="container-fluid about-container">
                             <div class="col-12"></div>
-                        </div>-->
+                        </div>
                         <div class="row justify-content-center">
-                            <div class="col-12 pt-30 text-center title">
+                            <div class="col-12 text-center title">
                                 <h1>ABOUT</h1>
                             </div>
                         </div>
@@ -124,22 +169,26 @@
                                     AURAL
                                     LANDSCAPES,
                                     LIKE A
-                                    COLLECTION OF MOODS THAT REFLECT CURRENT SOCIO-POLITICAL ISSUES WITH SOME REFERENCES
+                                    COLLECTION OF MOODS THAT REFLECT CURRENT SOCIO-POLITICAL ISSUES WITH SOME
+                                    REFERENCES
                                     TO ART
                                     AND/OR
                                     POP
                                     CULTURE ADDED TO THE MIX.</p>
-                                <p>IN PREPARATION FOR MY UPCOMING WORK (STILL UNTITLED), AND CONTINUING THE PATH OPENED
+                                <p>IN PREPARATION FOR MY UPCOMING WORK (STILL UNTITLED), AND CONTINUING THE PATH
+                                    OPENED
                                     BY MY
                                     LATEST
                                     PIECE
-                                    CHOREOPOP, I AM DEVELOPING A CREATIVE AND SCORING METHOD (CALLED MUSICOGRAPHY) THAT
+                                    CHOREOPOP, I AM DEVELOPING A CREATIVE AND SCORING METHOD (CALLED MUSICOGRAPHY)
+                                    THAT
                                     WILL
                                     SERVE
                                     AS
                                     THE
                                     GENERATOR FOR PHYSICAL/AURAL OUTCOMES.</p>
-                                <p>IN 2012/13 I PARTICIPATED IN SPAZIO, A EUROPEAN PROGRAMME FOR DANCE MAKERS. CURRENTLY
+                                <p>IN 2012/13 I PARTICIPATED IN SPAZIO, A EUROPEAN PROGRAMME FOR DANCE MAKERS.
+                                    CURRENTLY
                                     I AM A
                                     SUPPORTED
                                     ARTIST AT ICK AND DANSMAKERS, BOTH LOCATED IN AMSTERDAM.</p>
@@ -147,11 +196,13 @@
                                     DANCE,
                                     ICELAND
                                     DANCE
-                                    COMPANY, METROS, STEPHEN SHROPSHIRE, ANDRÉ GINGRAS, SYLVAIN EMARD AND VACLAV KUNES
+                                    COMPANY, METROS, STEPHEN SHROPSHIRE, ANDRÉ GINGRAS, SYLVAIN EMARD AND VACLAV
+                                    KUNES
                                     AMONGST
                                     OTHERS. I
                                     WORK AS
-                                    WELL AS DANCE TEACHER/COACH, GIVING WORKSHOPS OR IMPARTING CLASSES FOR INSTITUTIONS
+                                    WELL AS DANCE TEACHER/COACH, GIVING WORKSHOPS OR IMPARTING CLASSES FOR
+                                    INSTITUTIONS
                                     LIKE
                                     FONTYS,
                                     AHK, ARTEZ,
@@ -160,13 +211,16 @@
                                     NAME A
                                     FEW.
                                 </p>
-                                <p>MY WORK HAS TOURED ACROSS HOLLAND AND HAS BEEN PROGRAMMED IN THEATRES LIKE FRASCATI,
+                                <p>MY WORK HAS TOURED ACROSS HOLLAND AND HAS BEEN PROGRAMMED IN THEATRES LIKE
+                                    FRASCATI,
                                     MEERVAART,
                                     BELLEVUE,
-                                    KORZO, NWE VORST, GRAND THEATRE, PARKTHEATRE… TO NAME A FEW. IT HAS ALSO BEEN SHOWN
+                                    KORZO, NWE VORST, GRAND THEATRE, PARKTHEATRE… TO NAME A FEW. IT HAS ALSO BEEN
+                                    SHOWN
                                     AT DUTCH
                                     FESTIVALS LIKE
-                                    MUNDIAL, NAZOMERFESTIVAAL, BOULEVARD FESTIVAL OR THE NEDERLANDSE DANSDAGEN AMONGST
+                                    MUNDIAL, NAZOMERFESTIVAAL, BOULEVARD FESTIVAL OR THE NEDERLANDSE DANSDAGEN
+                                    AMONGST
                                     OTHERS.
                                     INTERNATIONALLY,
                                     I HAD THE CHANCE TO SHOW IN ISTANBUL AND PREMIERE IN THE U.K.</p>
@@ -179,26 +233,45 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
     </div>
 
     <!-- Divider 4 -->
-    <div class="divider-container">
-        <div class="quotation">
-        </div>
-        <div class="reference">
+    <div class="divider divider-four">
+        <div class="quotation future">
             <p>Dance your way to the future</p>
         </div>
     </div>
     <!-- Contact -->
-    <section>
-        <!-- Title -->
-        <div class="titel-container">
-            <h1>Contact</h1>
+    <div id="contact" class="container-fluid contact">
+        <!-- Title 3 -->
+        <div class="text-center title contact-title">
+            <h1>CONTACT</h1>
         </div>
         <!-- Content-->
-        <!-- Contact form -->
-    </section>
+        <div class="row">
+            <div class="col-12 col-md-6 contact-image">
+                <p>Contact image</p>
+            </div>
+            <div class="col-12 col-md-6 contact-message">
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, nisi adipisci fugit
+                    expedita, dignissimos at officiis mollitia cupiditate eum blanditiis harum dolores rerum
+                    voluptatum inventore quos quidem provident ipsa saepe.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Contact form -->
+    <form>
+        <div class="form-group">
+            <label for="FormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="FormControlInput1" placeholder="name@domain.com">
+        </div>
+        <div class="form-group">
+            <label for="FormControlTextarea"></label>
+            <textarea class="form-control" id="FormControlTextarea" rows="1"></textarea>
+        </div>
+    </form>
 
     <!-- Footer -->
 
@@ -225,9 +298,6 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 </body>
 
