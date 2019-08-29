@@ -7,8 +7,11 @@
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
     <!-- Fontawesome CSS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
@@ -24,39 +27,45 @@
 
 
 <body>
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-default navbar-expand-md navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <div class="logo-container">
-                <a class="navbar-brand btn btn-link logo" id="logo-button" href="index.html">JESUS DE VEGA</a>
-                </div>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+    <header>
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-default fixed-top navbar-expand-lg" id="sticky-top" role="navigation">
+            <div class="container-fluid">
                 <!-- Logo -->
+                <div class="nav navbar-nav navbar-left logo-container">
+                    <a class="navbar-brand btn btn-link logo" id="logo-button" href="#">JESUS DE VEGA</a>
+                </div>
+
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapseMenu"
+                    aria-controls="navbarCollapseMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fas fa-bars menuburger"></i>
+                </button>
+                <div class="collapse navbar-collapse navbar-right" id="navbarCollapseMenu">
+                    <!-- Navigation menu -->
+                    <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                        <li class="nav-item active"><a class="nav-link page-scroll" href="#home">Actual<span
+                                    class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link page-scroll" href="#gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link page-scroll" href="#archive">Archive</a></li>
+                        <li class="nav-item"><a class="nav-link page-scroll" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link page-scroll" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="navbar-collapse collapse" id="navbar-collapse-menu">
-                <!-- Menu -->
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#home">Actual</a></li>
-                    <li><a class="page-scroll" href="#gallery">Gallery</a></li>
-                    <li><a class="page-scroll" href="#archive">Archive</a></li>
-                    <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
+        </nav>
+    </header>
     <!-- Home section-->
     <div id="home" class="container-fluid home">
-        <!-- Title 1 -->
-        <div class="row">
-            <div class="col-12 text-center title actual-title">
-                <h1>ACTUAL</h1>
+            <div class="black-box"></div>
+            <div class="background-box">
+                <!-- Title 1 -->
+                <div class="row home-row no-gutters">
+                    <div class="col text-center title actual-title">
+                        <h1>ACTUAL</h1>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Carousel-->
