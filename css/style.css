@@ -208,7 +208,7 @@ button:focus {
     color: rgb(32, 27, 27);
 }
 
-.quotation>h4 {
+.quotation > h4 {
     display: block;
     text-align: center;
     font-family: 'Nunito', sans-serif;
@@ -219,7 +219,7 @@ button:focus {
     padding: 25px 10px 0 10px;
 }
 
-.reference>h6 {
+.reference > h6 {
     display: block;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -280,27 +280,63 @@ button:focus {
 
 /* Home --------------------------- Poster   */
 
-.actual-content {
-    margin-top: 5%;
-    width: 80vw;
+
+.actual-row {
+    display: flex;
+    width: 100vw;
     height: auto;
+    justify-content: center;
+}
+.actual-content {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 5%;
+    
+}
+.popPoster {
+    size: 100%;
 }
 
-.popPoster {
-    width: 40vw;
-    margin: 0 2% 0 10%;
-}
 #popPoster {
-    width: 100%;
     height: auto;
+    width: 100%;
+    position: 50% auto;
+    padding-left: 10%;
+    padding-bottom: 100%;
 }
 
 .popInfo {
-    margin: 0 2% 0 10%;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-self: center;
 }
 
+.popInfo h4 {
+    color: rgba(252, 250, 245);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.popInfo p {
+    color: rgba(252, 250, 245);
+    font-family: "Montserrat", sans-serif;
+}
+
+.actualLink {
+    display: flex;
+}
+#actualLink {  
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 425px) {
 
 
+}
 /* --------------------------------  Gallery   */
 
 .background-box-gallery {
@@ -407,11 +443,12 @@ button:focus {
 
 .about-text-content {
     background-color: rgba(0, 0, 0, 0.404);
+    
     display: block;
     width: 100vw;
     text-align: center;
     color: rgb(255, 255, 255);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 0.8em;
     font-weight: 100;
     letter-spacing: 4px;
