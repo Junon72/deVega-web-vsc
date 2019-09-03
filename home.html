@@ -2,24 +2,25 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- JS -->
+    <script src="navi.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
     <!-- Fontawesome CSS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <!-- Google Fonts CSS-->
-    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Montserrat:200,300,400,500,600&display=swap"
+        rel="stylesheet">
     <!-- CSS style.css-->
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>deVega matrix</title>
+    <title>deVega Art</title>
     <!-- Favicon icon -->
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
 
@@ -29,21 +30,22 @@
 <body>
     <header>
         <!-- Navigation bar -->
-        <nav class="navbar navbar-default fixed-top navbar-expand-lg" id="sticky-top" role="navigation">
-            <div class="container-fluid">
+        <nav class="navbar navbar-default fixed-top p-0" role="navigation">
+            <div class="container-fluid" id="nav-container">
                 <!-- Logo -->
                 <div class="nav navbar-nav navbar-left logo-container">
-                    <a class="navbar-brand btn btn-link logo" id="logo-button" href="#">JESUS DE VEGA</a>
+                    <a class="navbar-brand btn btn-link logo" id="logo-button" href="index.html">JESUS DE VEGA</a>
                 </div>
 
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapseMenu"
-                    aria-controls="navbarCollapseMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <button onclick="navToggle()" type="button" class="navbar-toggler" data-toggle="collapse"
+                    data-target="#navbarCollapseMenu" aria-controls="navbarCollapseMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="sr-only">Toggle navigation</span>
                     <i class="fas fa-bars menuburger"></i>
                 </button>
                 <div class="collapse navbar-collapse navbar-right" id="navbarCollapseMenu">
                     <!-- Navigation menu -->
-                    <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                    <ul class="navbar-nav m-auto w-100 justify-content-end" id="collapseMenu">
                         <li class="nav-item active"><a class="nav-link page-scroll" href="#home">Actual<span
                                     class="sr-only">(current)</span></a></li>
                         <li class="nav-item"><a class="nav-link page-scroll" href="#gallery">Gallery</a></li>
@@ -58,248 +60,269 @@
     </header>
     <!-- Home section-->
     <div id="home" class="container-fluid home">
-            <div class="black-box"></div>
-            <div class="background-box">
+        <div class="background-box">
+            <div class="mask-layer-home">
                 <!-- Title 1 -->
-                <div class="row home-row no-gutters">
-                    <div class="col text-center title actual-title">
-                        <h1>ACTUAL</h1>
+                <div class="row title-row home-row no-gutters">
+                    <div class="col text-center uppercase title actual-title">
+                        <h1>Actual</h1>
+                    </div>
+                </div>
+                <div class="container-fluid poster-container"></div>
+                <div class="row content-row-home justify-content-center no-gutters">
+                    <div class="col-6 imagecol">
+                        <div class="image-wrapper">
+                            <img src="assets/images/choreopop_cover.jpg" class="d-block w-100 h-auto" alt="First slide">
+                        </div>
+                    </div>
+                    <div class="col-6 contentcol">
+                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Consequuntur ex ratione blanditiis nobis quia?
+                            Atque illo iure libero a ipsum cum dicta inventore minima doloribus
+                            totam labore,
+                            architecto nulla laboriosam?</p>
+                        <button type="button" class="btn btn-link">Link</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Carousel-->
-        <div class="row">
-            <div class="col-12 col-md-6 actual-carousel poster">
-                <p>Poster image</p>
-            </div>
-            <div class="col-12 col-md-6 actual-carousel actual-info">
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ullam hic aut!</p>
-            </div>
-            <a class="btn btn-link see-more" id="see-choreopop" href="choreopop.html">SEE MORE...</a>
-        </div>
     </div>
     <!-- Divider 1 -->
-    <div class="divider divider-one">
-        <div class="quotation">
-            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
-            <h2>~ Bob Dylan</h2>
+    <div class="container-fluid divider divider-one">
+        <div class="row no-gutters text-center">
+            <div class="col-12 quotation">
+                <h4>"Art is not what you see, but what you make others see."</h4>
+            </div>
+            <div class="col-12 reference">
+                <h6>~ Edgar Degas</h6>
+            </div>
         </div>
     </div>
     <!-- Gallery section-->
     <div id="gallery" class="container-fluid gallery">
-        <!-- Title 2 -->
-        <div class="text-center title gallery-title">
-            <h1>GALLERY</h1>
-        </div>
-        <!-- Gallery card-->
-        <div class="row">
-            <div class="col-12 col-md-6 gallery-card">
-                <p>Gallery image</p>
+        <div class="background-box-gallery">
+            <!-- Title 1 -->
+            <div class="row title-row gallery-row no-gutters">
+                <div class="col text-center uppercase title gallery-title">
+                    <h1>Gallery</h1>
+                </div>
             </div>
-            <div class="col-12 col-md-6 carousel actual-info">
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ullam hic aut!</p>
-            </div>
-            <a class="btn btn-link see-more" id="see-gallery" href="choreopop.html">SEE MORE...</a>
         </div>
     </div>
     <!-- Divider 2 -->
-    <div class="divider divider-two">
-        <div class="quotation">
-            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
-            <h2>~ Bob Ross</h2>
+    <div class="container-fluid divider divider-two">
+        <div class="row quotation no-gutters text-center">
+            <div class="col-12 quotation">
+                <h4>"The job of the artist is always to deepen the mystery."</h4>
+            </div>
+            <div class="col-12 reference">
+                <h6>~ Francis Bacon</h6>
+            </div>
         </div>
     </div>
     <!-- Archive section-->
     <div id="archive" class="container-fluid archive">
-        <!-- Title 3 -->
-        <div class="text-center title archive-title">
-            <h1>ARCHIVE</h1>
-        </div>
-        <!-- Archive carousel-->
-        <div class="row">
-            <div class="col-12 col-md-6 archive-carousel archive-poster">
-                <p>Archive image</p>
-            </div>
-            <div class="col-12 col-md-6 archive-carousel archive-info">
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, nisi adipisci fugit
-                    expedita, dignissimos at officiis mollitia cupiditate eum blanditiis harum dolores rerum
-                    voluptatum inventore quos quidem provident ipsa saepe.</p>
+        <div class="background-box-archive">
+            <!-- Title 1 -->
+            <div class="row title-row archive-row no-gutters">
+                <div class="col text-center uppercase title archive-title">
+                    <h1>Archive</h1>
+                </div>
             </div>
         </div>
     </div>
     <!-- Divider 3 -->
-    <div class="divider divider-three">
-        <div class="quotation">
-            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
-            <h2>~ Bob</h2>
+    <div class="container-fluid divider divider-three">
+        <div class="row quotation no-gutters text-center">
+            <div class="col-12 quotation">
+                <h4>"Sometimes with art, it is important just to look."</h4>
+            </div>
+            <div class="col-12 reference">
+                <h6>~ Marina Abramović</h6>
+            </div>
         </div>
     </div>
     <!-- About section-->
-    <div id="about" class="about-wrapper">
-        <div class="container-fluid about-container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-xl-8 about" id="aboutPlx">
-                    <div class="aboutWrapper">
-                        <!-- Title -->
-                        <div class="container-fluid about-container">
-                            <div class="col-12"></div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-12 text-center title">
-                                <h1>ABOUT</h1>
-                            </div>
-                        </div>
-                        <div class="row about-under">
-                            <div class="col-12"></div>
-                        </div>
-                    </div>
-                    <!-- Content-->
+    <div id="about" class="container-fluid about">
+        <div class="background-box-about">
+            <!-- Title 1 -->
+            <div class="row title-row about-row no-gutters">
+                <div class="col text-center uppercase title about-title">
+                    <h1>About</h1>
+                </div>
+                <!-- Content -->
+                <div class="row about-text no-gutters">
+                    <div class="col-12 col-xl-6 about-text-content">
+                        <p>I have alvays been interested in processes and in the act of creation itself.</p>
+                        <p>My passion for music (and music making) has let me to exploring the relationship
+                            between music production/composition and choreography/movement generation. I am
+                            looking for a palyful balanced encompassing the freedom and the dynamics of a
+                            concert
+                            with
+                            the (hidden) precision of a choreographed piece.</p>
 
-                    <div class="container-fluid about-text-container">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-md-10 col-xl-8 text-center about-text-content">
-                                <p>I HAVE ALWAYS BEEN INTERESTED IN PROCESSES AND IN THE ACT OF CREATION ITSELF.</p>
-                                <p>MY PASSION FOR MUSIC (AND MUSIC MAKING) HAS LED ME TO EXPLORING THE RELATIONSHIP
-                                    BETWEEN
-                                    MUSIC
-                                    PRODUCTION/COMPOSITION AND CHOREOGRAPHY/MOVEMENT GENERATION. I AM LOOKING FOR A
-                                    PLAYFUL
-                                    BALANCE
-                                    ENCOMPASSING
-                                    THE FREEDOM AND THE DYNAMICS OF A CONCERT WITH THE (HIDDEN) PRECISION OF A
-                                    CHOREOGRAPHED
-                                    PIECE.
-                                </p>
-                                <p>I CONSIDER MY WORK TO BE ATMOSPHERIC AND IMMERSIVE. I CREATE PHYSICAL, VISUAL AND
-                                    AURAL
-                                    LANDSCAPES,
-                                    LIKE A
-                                    COLLECTION OF MOODS THAT REFLECT CURRENT SOCIO-POLITICAL ISSUES WITH SOME
-                                    REFERENCES
-                                    TO ART
-                                    AND/OR
-                                    POP
-                                    CULTURE ADDED TO THE MIX.</p>
-                                <p>IN PREPARATION FOR MY UPCOMING WORK (STILL UNTITLED), AND CONTINUING THE PATH
-                                    OPENED
-                                    BY MY
-                                    LATEST
-                                    PIECE
-                                    CHOREOPOP, I AM DEVELOPING A CREATIVE AND SCORING METHOD (CALLED MUSICOGRAPHY)
-                                    THAT
-                                    WILL
-                                    SERVE
-                                    AS
-                                    THE
-                                    GENERATOR FOR PHYSICAL/AURAL OUTCOMES.</p>
-                                <p>IN 2012/13 I PARTICIPATED IN SPAZIO, A EUROPEAN PROGRAMME FOR DANCE MAKERS.
-                                    CURRENTLY
-                                    I AM A
-                                    SUPPORTED
-                                    ARTIST AT ICK AND DANSMAKERS, BOTH LOCATED IN AMSTERDAM.</p>
-                                <p>AS A DANCER I HAVE WORKED WITH COMPANIES AND CHOREOGRAPHERS SUCH AS ICK, GALILI
-                                    DANCE,
-                                    ICELAND
-                                    DANCE
-                                    COMPANY, METROS, STEPHEN SHROPSHIRE, ANDRÉ GINGRAS, SYLVAIN EMARD AND VACLAV
-                                    KUNES
-                                    AMONGST
-                                    OTHERS. I
-                                    WORK AS
-                                    WELL AS DANCE TEACHER/COACH, GIVING WORKSHOPS OR IMPARTING CLASSES FOR
-                                    INSTITUTIONS
-                                    LIKE
-                                    FONTYS,
-                                    AHK, ARTEZ,
-                                    CODARTS, NORRDANS, ICK, HJS, AKBANK SANAT (TURKEY), NSCD (LEEDS), CAD (SEVILLE)…
-                                    JUST TO
-                                    NAME A
-                                    FEW.
-                                </p>
-                                <p>MY WORK HAS TOURED ACROSS HOLLAND AND HAS BEEN PROGRAMMED IN THEATRES LIKE
-                                    FRASCATI,
-                                    MEERVAART,
-                                    BELLEVUE,
-                                    KORZO, NWE VORST, GRAND THEATRE, PARKTHEATRE… TO NAME A FEW. IT HAS ALSO BEEN
-                                    SHOWN
-                                    AT DUTCH
-                                    FESTIVALS LIKE
-                                    MUNDIAL, NAZOMERFESTIVAAL, BOULEVARD FESTIVAL OR THE NEDERLANDSE DANSDAGEN
-                                    AMONGST
-                                    OTHERS.
-                                    INTERNATIONALLY,
-                                    I HAD THE CHANCE TO SHOW IN ISTANBUL AND PREMIERE IN THE U.K.</p>
-                                <p>I WAS BORN IN THE CANARY ISLANDS (SPAIN) AND I CURRENTLY LIVE IN AMSTERDAM
-                                    (NETHERLANDS).
-                                </p>
-                            </div>
+                        <p>I consider my work to be atmospheric and immersive. I create physical, visual and
+                            aural
+                            landscapes, like a collection of moods that replicate current socio-political
+                            issues
+                            with
+                            some references to art and /or pop clture addd to the mix.</p>
 
-                        </div>
+                        <p>In prepareation for my upcoming work (still untitled), and counting the path
+                            opened by my
+                            latest piece 'Choreopop', I am developing a creative and scoring method (called
+                            'Musicography')
+                            that will serve as a generator for physical/aural outcomes.</p>
+
+                        <p>In 2012/13 I participated in Spazio, a European programme for dance makers.
+                            Currently I am supported artist at ICK and Dansmakers, both located in Amterdam.
+                        </p>
+
+                        <p>As a dancer I have worked with companies and choreographers such as ICK, Galili
+                            Dance,
+                            Iceland Dance Company,
+                            Metros, Stephen Shropshire, André Gingras, Sylvain Emard and Václav Kuneš
+                            amongst
+                            others. I
+                            workded as well as a dance teacher/coach, giving workshops or imparting classes
+                            for
+                            instituions like Fontys, AHK, Artez, Codarts, Norrdans, ICK, HJS, Akbank Sanat
+                            (Turkey),
+                            NSCD (Leeds), CAD (Seville) etc. to name but a few.</p>
+
+                        <p>My work has toured accross The Netherlands and has been among others programmed
+                            in
+                            theaters
+                            like Frascati, Meervaart, Bellevue, Korzo, NWE Vorst, Grand Theater Groningen,
+                            Parktheater.
+                            I also have had a priviledge to to show my work at Dutch festivals like Mundial,
+                            Nazomerfestival, Boulevard Festival and The Nederlandse Dansdagen as an example.
+                            Internationally, I had the change to show in Istanbul and premiere a work in the
+                            U.K.
+                        </p>
+
+                        <p>I was born in the Canry Islands (Spain) and I am currently based in Amsterdam
+                            (The
+                            Netherlands)</p>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Divider 4 -->
-    <div class="divider divider-four">
-        <div class="quotation future">
-            <p>Dance your way to the future</p>
+    <div class="container-fluid divider divider-four">
+        <div class="row quotation no-gutters text-center">
+            <div class="col-12 quotation" id="quotation-four">
+                <h4>Dance your way to the future.</h4>
+            </div>
         </div>
     </div>
-    <!-- Contact -->
+
+    <!-- Contact section-->
     <div id="contact" class="container-fluid contact">
-        <!-- Title 3 -->
-        <div class="text-center title contact-title">
-            <h1>CONTACT</h1>
-        </div>
-        <!-- Content-->
-        <div class="row">
-            <div class="col-12 col-md-6 contact-image">
-                <p>Contact image</p>
+        <div class="background-box-contact">
+            <!-- Title 1 -->
+            <div class="row title-row contact-row no-gutters">
+                <div class="col text-center uppercase title contact-title">
+                    <h1>Contact</h1>
+                </div>
             </div>
-            <div class="col-12 col-md-6 contact-message">
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, nisi adipisci fugit
-                    expedita, dignissimos at officiis mollitia cupiditate eum blanditiis harum dolores rerum
-                    voluptatum inventore quos quidem provident ipsa saepe.</p>
+            <!-- Content -->
+            <div class="row white-overlay no-gutters">
+                <div class="col-12 col-xl-6 layoutXL">
+                    <div class="row iam-row no-gutters">
+                        <div class="col contact-content">
+                            <div class="col-12 col-md-6 axed">
+                                <img src="assets/images/axed.jpg" class="image-fluid float-left" alt="image"
+                                    width="100%" min-width="843px" height="auto">
+                            </div>
+                            <div class="col-6 invitation">
+                                <h4>Lorem ipsum dolor sit amet</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Eos modi similique expedita magnam? Asperiores possimus
+                                    animi libero porro explicabo provident ab nihil,
+                                    doloremque blanditiis culpa dolor omnis perferendis
+                                    labore quidem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 layoutXL">
+                    <div class="row form-row no-gutters m-0 p-0">
+                        <div class="col contact-content m-0 p-0">
+                            <div class="col form">
+                                <form>
+                                    <label for="InputName">
+                                        <h5>Contact me here. I will get back to you at the earliest!</h5>
+                                    </label>
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="FormControlTextarea" name="message" rows="4"
+                                            placeholder="Message" required></textarea>
+                                    </div>
+                                    <div class="form-group" id="InputName">
+                                        <div class="row no-gutters m-0">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Name" required>
+                                            </div>
+
+                                        </div>
+                                        <label for="InputEmail"></label>
+                                        <input type="email" class="form-control" id="email" name="email" required
+                                            aria-describedby="emailHelp" placeholder="Email">
+                                    </div>
+
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="links">
+                    <button type="submit" class="btn btn-default float-right" id="submitContact">
+                        <h5>Send »»</h5>
+                    </button>
+                </div>
+                <div class="col col-12 footer-col download-col">
+                    <a href="assets/cv/Jesus de Vega CV .pdf" target="_blank" class="download float-left" id="myCV">
+                        <h6>Download C.V.</h6>
+                    </a>
+                    <small id="downloadHelp" class="form-text float-left text-muted">Download my
+                        C.V. above as a pdf.</small>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Contact form -->
-    <form>
-        <div class="form-group">
-            <label for="FormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="FormControlInput1" placeholder="name@domain.com">
+    <!-- Footer-->
+    <footer class="container-fluid">
+        <div class="row footer-row no-gutters m-0 p-0">
+            <div class="col footer-col text-align-center col-social">
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank"
+                            href="https://www.linkedin.com/in/jesus-de-vega-55b25b179/?originalSubdomain=nl">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.instagram.com/jesusdevg/">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.facebook.com/jesus.devega.10">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="FormControlTextarea"></label>
-            <textarea class="form-control" id="FormControlTextarea" rows="1"></textarea>
-        </div>
-    </form>
-
-    <!-- Footer -->
-
-    <div class="footer-container">
-        <div class="social-links">
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
+    </footer>
 
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -307,6 +330,9 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 </body>
 
