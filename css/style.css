@@ -246,7 +246,7 @@ button:focus {
 .background-box {
     margin-top: 0px;
     padding: 0;
-    background-image: url(/assets/images/redrain.jpg);
+    background-image: url(../assets/images/redrain.jpg);
     height: 100vh;
     width: auto;
     background-position: top 0 right 0;
