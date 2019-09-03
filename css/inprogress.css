@@ -1,0 +1,28 @@
+/* ---------    In progress pages */
+
+.wrapper-inprogress {
+    display: inline-block;
+    position: absolute;
+    background-color: black;
+    padding: 0;
+    margin: -5px;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.text-inprogress {
+    color: blanchedalmond;
+    margin-top: 13%;
+    margin-left: 10%;
+}
+
+.linkWrapper-inprogress {
+    margin-top: 5%;
+    margin-left: 10%;
+
+}
+
+.backHome-inprogress {
+    color: lightskyblue;
+}
