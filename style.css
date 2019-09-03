@@ -280,9 +280,23 @@ button:focus {
 
 /* Home --------------------------- Poster   */
 
-.poster-container {
-    width: 70vw;
+.actual-content {
+    margin-top: 5%;
+    width: 80vw;
     height: auto;
+}
+
+.popPoster {
+    width: 40vw;
+    margin: 0 2% 0 10%;
+}
+#popPoster {
+    width: 100%;
+    height: auto;
+}
+
+.popInfo {
+    margin: 0 2% 0 10%;
 }
 
 
