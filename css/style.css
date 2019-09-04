@@ -247,13 +247,14 @@ button:focus {
     margin-top: 0px;
     padding: 0;
     background-image: url(../assets/images/redrain.jpg);
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: auto;
     background-position: top 0 right 0;
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
-    overflow: hidden;
+    overflow: auto;
     background-attachment: fixed;
     z-index: -2;
 }
@@ -288,14 +289,24 @@ button:focus {
     justify-content: center;
 }
 .actual-content {
-    margin-top: 5%;
+    margin-top: 20vh;
     
 }
 
+.imgWrap {
+    padding: 0;
+}
 .popPoster {
     display: flex;
     flex-flow: column wrap;
-    padding-left: 8%;
+    height: 600px;
+    /*border: solid 1px white;*/
+    margin-left: 8%;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 30px;
+    overflow: auto;
 }
 
 #popPoster {
@@ -308,25 +319,56 @@ button:focus {
 }
 
 .popInfo {
-   
+    display: flex;
+    flex-flow: column;
     height: 100%;
-    margin-top: -50px;
+    margin-top: -30px;
     padding: 0;
     align-self: center;
+    
 }
 
-.popInfo h4 {
-    color: rgba(252, 250, 245);
+.popInfo h2 {
+    display: inline;
+    position: relative;
+    transform: rotate( -10deg);
+    color: rgba(252, 56, 164, 0.8);
+    text-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.5);
     font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
-    padding-left: 20%; 
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-stretch: narrower;
+    letter-spacing: 5px; 
+    padding-left: 0;
+    transform: rotate( -20deg);
+    -webkit-transform: rotate( -20deg);
+    -moz-transform: rotate( -20deg);
+    -ms-transform: rotate( -20deg);
+    -o-transform: rotate( -20deg);
 }
 
-.popInfo p {
-    padding-left: 20%; 
+/* attribution tutor for text shadow - https://line25.com/tutorials/how-to-create-a-cool-anaglyhic-text-effect-with-css */
+.popInfo h2:after {
+    content: "CHOREOPOP";
+    position: absolute; left: 3px; top: 2px;
+    color: rgb(98, 224, 255);
+}
+
+.popInfo > .infoText {
+    display: inline-flex;
+    width: 50%;
+    padding-left: 0;
     color: rgba(252, 250, 245);
     font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 40%;
+    margin-left: 2%;
+    float: left;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
 }
 
 .actualLink {
