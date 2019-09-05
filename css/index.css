@@ -79,7 +79,6 @@ body {
     to {
         opacity: 0;
     }
-
 }*/
 /*----------------------------------- Logo  */
 
@@ -160,7 +159,7 @@ body {
     -o-transition: ease-in-out 1s;
 }
 
-#and-sign {
+/*#and-sign {
     font-family: 'Julius Sans One', monospace;
     text-decoration: none;
     color: rgb(239, 147, 147);
@@ -173,7 +172,7 @@ body {
     -moz-transition: ease-in-out 1s;
     -ms-transition: ease-in-out 1s;
     -o-transition: ease-in-out 1s;
-}
+}*/
 
 #entry-business {
     font-family: 'Julius Sans One', monospace;

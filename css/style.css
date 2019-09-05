@@ -255,11 +255,11 @@ button:focus {
 .background-box {
     margin-top: 0px;
     padding: 0;
-    background-image: url(../assets/images/redrain.jpg);
+    background-image: url(../assets/images/glitterfull.jpg);
     min-height: 100vh;
     height: 100%;
     width: auto;
-    background-position: top 0 right 0;
+    background-position: top 0 left 10vw;
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
@@ -458,10 +458,6 @@ button:focus {
     }
 
 
-    .popTitle {
-        text-emphasis: underline;
-    }
-
     .popTitle h2 u {
         display: relative;
         font-size: 5vw;
@@ -516,21 +512,66 @@ button:focus {
 }
 
 @media only screen and (min-width: 1024px) {
-    .popInfo h2 u {
-        margin-top: 1vw;
-        margin-left: 1vw;
-        font-size: 5vw;
-        letter-spacing: 8px;
+
+    .spacing-div {
+        height: 15vh;
     }
 
+    .imgWrap {
+        display: block;
+        width: 50vh;
+        padding-left: 8vw;
+    }
+
+    #popImage {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    #glitterImage {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .popTitle h2 u {
+        display: relative;
+        font-size: 3vw;
+        letter-spacing: 5px;
+        margin-top: -4vw;
+        margin-left: 3vw;
+        max-width: 30vw;
+     
+    }
+    
+    .glitterTitle h2 u {
+        display: relative;
+        font-size: 3vw;
+        letter-spacing: 5px;
+        margin-top: -4vw;
+        margin-left: 3vw;
+        max-width: 30vw;
+    }
     .infoText {
-        font-size: 1.5vw;
-    }
-
-    #actualLinkID {
-        align-self: flex-start;
-        font-size: 2vw;
+        max-width: 42vw;
+        padding-top: 2vw;
+        font-size: 1.2vw;
         margin-top: 1vw;
+        margin-left: 3vw;
+    }
+    .linkWrap {
+        margin-bottom: 4vw;
+    }
+    
+    .linkWrap .actualLink>p {
+        margin-right: auto;
+        color: rgb(239, 147, 147);
+        font-size: 1.4vw;
+    }
+    
+    .separator {
+        display: block;
+        width: auto;
+        height: 2vw;
     }
 }
 
