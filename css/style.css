@@ -252,14 +252,16 @@ button:focus {
 
 /* --------------------------------  Home    */
 
+/* --------- Background/ general */
+
 .background-box {
     margin-top: 0px;
     padding: 0;
-    background-image: url(../assets/images/glitterfull.jpg);
+    background-image: url(../assets/images/redrain.jpg);
     min-height: 100vh;
     height: 100%;
     width: auto;
-    background-position: top 0 left 10vw;
+    background-position: top 0 right 0;
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
@@ -278,10 +280,12 @@ button:focus {
     padding: 0;
     margin: 0;
 }
+
 .mask-layer-home {
     display: inline-block;
     height: 100vh;
 }
+
 .home-row {
     margin-top: 98px;
 }
@@ -293,7 +297,7 @@ button:focus {
 .actual-content {
     display: flex;
     flex-flow: column;
-    height: 50%;
+    height: 100vh;
     width: 100vw;
     animation: fadein 3s;
     -webkit-animation: fadein 3s;
@@ -315,20 +319,15 @@ button:focus {
 
 .popPoster {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-.imgWrap {
-    display: block;
-    width: 100%;
-    height: auto;
-    padding: 0 0 0 0;
-}
+/* --------- Poster image properties */
 
-/* Choreopo/ Glittergods */
+/* Choreopop/ Glittergods image */
 #popImage {
     width: 100%;
     height: auto;
@@ -349,6 +348,8 @@ button:focus {
     -o-border-radius: 720px;
 }
 
+/* --------- Poster text properties */
+
 .popInfo {
     display: flex;
     flex-flow: column;
@@ -364,10 +365,6 @@ button:focus {
     color: rgba(253, 122, 247, 0.842);
     text-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.5);
     font-family: "Arial BlackH", sans-serif;
-    font-size: 10vw;
-    letter-spacing: 5px;
-    margin-top: -15vw;
-    max-width: 100vw;
     text-emphasis: underline;
 }
 
@@ -378,6 +375,7 @@ button:focus {
     left: 4px;
     top: 3px;
     color: rgb(84, 253, 239);
+    text-emphasis: underline;
 }
 
 .glitterTitle h2 u {
@@ -386,14 +384,9 @@ button:focus {
     color: rgba(247, 63, 103, 0.842);
     text-shadow: 0 0 1rem rgba(255, 3, 3, 0.8);
     font-family: "Arial BlackH", sans-serif;
-    font-size: 8vw;
-    letter-spacing: 5px;
-    margin-top: -15vw;
-    max-width: 100vw;
-    text-emphasis: underline;
 }
 
-
+/* attribution tutor for text shadow - https://line25.com/tutorials/how-to-create-a-cool-anaglyhic-text-effect-with-css */
 .glitterTitle h2 u:after {
     content: "GLITTERGODS/ STIGMA";
     position: absolute;
@@ -411,36 +404,257 @@ button:focus {
     color: rgba(252, 250, 245);
     text-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
     font-family: "Montserrat", sans-serif;
-    font-size: 4vw;
-    text-align: left;
-    margin-right: auto;
+    text-align: justify;
 }
 
-.linkWrap {
-    display: block;
-    margin-bottom: 4vw;
-}
-
-.linkWrap .actualLink>p {
+.linkWrap #actualLinkID>p {
     margin-right: auto;
     color: rgb(239, 147, 147);
-    font-size: 4vw;
 }
 
-.separator {
-    display: block;
-    width: auto;
-    height: 5vw;
+.linkWrap #glitterLinkID>p {
+    margin-right: auto;
+    color: rgb(239, 147, 147);
 }
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 425px) {
+
+    /* --------- Poster layout properties */
+
+    .actual-content {
+        max-height: 74%;
+        /*controls the height of the poster content container - how much space the poster items have in height*/
+        height: 100vh;
+    }
+
+
+    .imgWrap {
+        display: block;
+        width: auto;
+        height: 100%;
+        padding: 0 0 0 0;
+    }
+
+    .separator {
+        display: block;
+        width: auto;
+        height: 10px;
+    }
+
+    /* --------- Poster text properties */
+
+
+    .popTitle h2 u {
+        /*display: flex;
+    position: relative;
+    color: rgba(253, 122, 247, 0.842);
+    text-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.5);
+    font-family: "Arial BlackH", sans-serif;*/
+        font-size: 10vw;
+        letter-spacing: 5px;
+        margin-top: -15vw;
+        max-width: 100vw;
+    }
+
+
+    .glitterTitle h2 u {
+        /*display: flex;
+    position: relative;
+    color: rgba(247, 63, 103, 0.842);
+    text-shadow: 0 0 1rem rgba(255, 3, 3, 0.8);
+    font-family: "Arial BlackH", sans-serif;*/
+        font-size: 8vw;
+        letter-spacing: 5px;
+        margin-top: -20vw;
+        max-width: 100vw;
+    }
+
+
+    .infoText {
+        /*display: flex;
+    position: relative;
+    max-width: 100vw;
+    height: 100%;
+    padding-top: 4vw;
+    color: rgba(252, 250, 245);
+    text-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;*/
+        font-size: 3.4vw;
+    }
+
+    .linkWrap {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .linkWrap #actualLinkID>p {
+        /*margin-right: auto;
+        color: rgb(239, 147, 147);*/
+        font-size: 4vw;
+    }
+
+    .linkWrap #glitterLinkID>p {
+        /*margin-right: auto;
+        color: rgb(239, 147, 147);*/
+        font-size: 4vw;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    /* --------- Poster layout properties */
+
+    .spacing-div {
+        /*determines the space between the title and the content div*/
+        height: 7vh;
+    }
+
+    .actual-content {
+        max-height: 76%;
+        /*controls the height of the poster content container - how much space the poster items have in height*/
+        height: 100vh;
+    }
+
+
+    .separator {
+        display: block;
+        width: auto;
+        height: 10px;
+    }
+
+    /* --------- Poster image properties */
+    .imgWrap {
+        display: block;
+        height: 100%;
+        padding: 0 0 0 0;
+    }
+
+    #popImage,
+    #glitterImage {
+        width: 80%;
+        height: 80vw;
+        margin-left: 10%;
+    }
+
+
+    .separator {
+        height: 5vw;
+    }
+
+    /* --------- Poster text properties */
+
+
+    .popTitle h2 u {
+        /*display: flex;
+        position: relative;
+        color: rgba(253, 122, 247, 0.842);
+        text-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.5);
+        font-family: "Arial BlackH", sans-serif;*/
+        font-size: 8vw;
+        letter-spacing: 5px;
+        margin-top: -15vw;
+        max-width: 100vw;
+        margin-left: 10%;
+    }
+
+
+    .glitterTitle h2 u {
+        /*display: flex;
+        position: relative;
+        color: rgba(247, 63, 103, 0.842);
+        text-shadow: 0 0 1rem rgba(255, 3, 3, 0.8);
+        font-family: "Arial BlackH", sans-serif;*/
+        font-size: 8vw;
+        letter-spacing: 5px;
+        margin-top: -20vw;
+        max-width: 100vw;
+        margin-left: 10%;
+    }
+
+
+    .infoText {
+        /*display: flex;
+        position: relative;
+        max-width: 100vw;
+        height: 100%;
+        padding-top: 4vw;
+        color: rgba(252, 250, 245);
+        text-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
+        font-family: "Montserrat", sans-serif;
+        text-align: justify;*/
+        width: 80%;
+        font-size: 2.3vw;
+        margin-left: 10%;
+    }
+
+    .linkWrap {
+        display: block;
+        margin-left: 10%;
+        padding: 0;
+    }
+
+    .linkWrap #actualLinkID>p,
+    .linkWrap #glitterLinkID>p {
+        /*margin-right: auto;
+            color: rgb(239, 147, 147);*/
+        font-size: 3vw;
+    }
+
+}
+
 
 @media only screen and (min-width: 768px) {
 
-    
-    .spacing-div {
-        height: 30vh;
+    /*---------- Animation for bigger screens */
+
+    .actual-content {
+        display: flex;
+        flex-flow: column;
+        height: 100vh;
+        width: 100vw;
+        animation: textIn fadein 20s;
+        -webkit-animation: textIn fadein 20s;
+        animation-timing-function: cubic-bezier (.165, .84, 44, 1);
+        animation-delay: 0s;
+        overflow: auto;
+}
+
+    @keyframes fadein {
+        from {
+            display: none;
+            opacity: 0;
+        }
+
+        to {
+            display: block;
+            opacity: 1;
+        }
     }
+
+    /* --------- Poster layout properties */
+    .spacing-div {
+        /*determines the space between the title and the content div*/
+        height: 24vh;
+    }
+
+    .actual-content {
+        align-self: center;
+        max-height: 60%;
+        /*controls the height of the poster content container - how much space the poster items have in height*/
+    }
+
+    .popPoster {
+        display: block;
+        flex-flow: row;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    /* --------- Poster image properties */
     .imgWrap {
         display: block;
         width: 35vh;
@@ -457,46 +671,43 @@ button:focus {
         height: 30vw;
     }
 
+    .separator {
+        height: 5vw;
+    }
+
+    /* --------- Poster text properties */
+
 
     .popTitle h2 u {
-        display: relative;
         font-size: 5vw;
         letter-spacing: 5px;
         margin-top: -7vw;
         margin-left: 3vw;
         max-width: 30vw;
-     
-    }
-
-    /* attribution tutor for text shadow - https://line25.com/tutorials/how-to-create-a-cool-anaglyhic-text-effect-with-css */
-    .popTitle h2 u:after {
-        content: "CHOREOPOP";
-        position: absolute;
-        left: 3px;
-        top: 2px;
-        color: rgb(122, 253, 242);
     }
 
     .glitterTitle h2 u {
-        display: relative;
-        font-size: 4vw;
+        font-size: 4.2vw;
         letter-spacing: 5px;
         margin-top: -7vw;
         max-width: 30vw;
+        margin-left: 6% !important;
+
     }
 
-
     .infoText {
-        max-width: 42vw;
+        width: 50vw;
         padding-top: 2vw;
         font-size: 2.2vw;
         margin-top: 1vw;
         margin-left: 3vw;
+        overflow-x: visible;
     }
-}
 
-.linkWrap {
-    margin-bottom: 4vw;
+
+    .linkWrap {
+        margin-bottom: 4vw;
+    }
 }
 
 .linkWrap .actualLink>p {
@@ -505,13 +716,8 @@ button:focus {
     font-size: 2.4vw;
 }
 
-.separator {
-    display: block;
-    width: auto;
-    height: 5vw;
-}
 
-@media only screen and (min-width: 1024px) {
+/*@media only screen and (min-width: 1024px) {
 
     .spacing-div {
         height: 15vh;
@@ -540,9 +746,9 @@ button:focus {
         margin-top: -4vw;
         margin-left: 3vw;
         max-width: 30vw;
-     
+
     }
-    
+
     .glitterTitle h2 u {
         display: relative;
         font-size: 3vw;
@@ -551,6 +757,7 @@ button:focus {
         margin-left: 3vw;
         max-width: 30vw;
     }
+
     .infoText {
         max-width: 42vw;
         padding-top: 2vw;
@@ -558,16 +765,17 @@ button:focus {
         margin-top: 1vw;
         margin-left: 3vw;
     }
+
     .linkWrap {
         margin-bottom: 4vw;
     }
-    
+
     .linkWrap .actualLink>p {
         margin-right: auto;
         color: rgb(239, 147, 147);
         font-size: 1.4vw;
     }
-    
+
     .separator {
         display: block;
         width: auto;
