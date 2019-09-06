@@ -21,7 +21,6 @@ html {
 /*  Section titles  */
 .title h1 {
     font-family: 'Julius Sans One', monospace;
-    /*font-size: 1fr;*/
     color: rgb(255, 109, 109);
 }
 
@@ -66,23 +65,6 @@ button:focus {
     display: block;
 }
 
-
-/* in case of taking the navbar back
-
-.navbar {
-    padding: 2.5rem 1rem 1rem 1rem;
-}
-
-@media (max-width: 990px) {
-    #navbarCollapseMenu {
-        margin: auto;
-        padding-left: 10px;
-        width: 100vw;
-        background-color: rgba(0, 0, 0, 0.40);
-    }
-}*/
-
-
 .navbar-default .navbar-collapse .navbar-nav {
     text-transform: uppercase;
 }
@@ -96,7 +78,7 @@ button:focus {
     line-height: 1.5em;
 }
 
-/* menu list effect on hover */
+/* -------------- menu list effect on hover */
 .navbar #collapseMenu>li>a:hover,
 .navbar #collapseMenu>li>a:focus,
 .navbar #collapseMenu>li>a:active {
@@ -248,6 +230,11 @@ button:focus {
     font-style: inherit;
 }
 
+@media only screen and (min-width: 1024px) {
+    .divider {
+        height: 12vh;
+    }
+}
 /* ---------------------------------------------- Sections  */
 
 /* --------------------------------  Home    */
@@ -255,7 +242,7 @@ button:focus {
 /* --------- Background/ general */
 
 .background-box {
-    margin-top: 0px;
+    margin-top: 0;
     padding: 0;
     background-image: url(../assets/images/redrain.jpg);
     min-height: 100vh;
@@ -354,7 +341,7 @@ button:focus {
     display: flex;
     position: relative;
     color: rgba(253, 122, 247, 0.842);
-    text-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 1rem rgba(252, 41, 241, 0.842);
     font-family: "Arial BlackH", sans-serif;
     text-emphasis: underline;
 }
@@ -393,17 +380,27 @@ button:focus {
     height: 100%;
     padding-top: 4vw;
     color: rgba(252, 250, 245);
-    text-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Julius Sans One', monospace;
     text-align: justify;
 }
 
-.linkWrap #actualLinkID>p,
-.linkWrap #glitterLinkID>p {
+
+.linkWrap #actualLinkID,
+.linkWrap #glitterLinkID {
     margin-right: auto;
     color: rgb(255, 109, 109);
 }
 
+.linkWrap a {
+    text-decoration: none;
+}
+
+.linkWrap a:hover,
+.linkWrap a:active {
+    color: rgb(255, 109, 109);
+    text-decoration-color:rgb(255, 109, 109);
+    -moz-text-decoration-color:rgb(255, 109, 109);
+}
 
 @media only screen and (max-width: 425px) {
 
@@ -477,15 +474,8 @@ button:focus {
         padding: 0;
     }
 
-    .linkWrap #actualLinkID>p {
-        /*margin-right: auto;
-        color: rgb(239, 147, 147);*/
-        font-size: 4vw;
-    }
-
-    .linkWrap #glitterLinkID>p {
-        /*margin-right: auto;
-        color: rgb(239, 147, 147);*/
+    .linkWrap #actualLinkID,
+    .linkWrap #glitterLinkID {
         font-size: 4vw;
     }
 
@@ -584,8 +574,8 @@ button:focus {
         padding: 0;
     }
 
-    .linkWrap #actualLinkID>p,
-    .linkWrap #glitterLinkID>p {
+    .linkWrap #actualLinkID,
+    .linkWrap #glitterLinkID {
         font-size: 3vw;
     }
 
@@ -694,6 +684,12 @@ button:focus {
     .linkWrap {
         margin-bottom: 4vw;
     }
+
+    .linkWrap #actualLinkID,
+    .linkWrap #glitterLinkID {
+        font-size: 3.2vw;
+    }
+
 }
 
 
@@ -720,23 +716,29 @@ button:focus {
         height: 20vw;
     }
 
+    .popTitle h2 {
+        margin-left: -0.2vw;
+    }
     .popTitle h2 u {
         display: relative;
         font-size: 3vw;
         letter-spacing: 5px;
         margin-top: -4vw;
-        margin-left: 3vw;
-        max-width: 30vw;
+        max-width: 34vw;
 
+    }
+
+    .glitterTitle h2 {
+        margin-left: 1.2vw;
     }
 
     .glitterTitle h2 u {
         display: relative;
-        font-size: 3vw;
+        font-size: 2.8vw;
         letter-spacing: 5px;
         margin-top: -4vw;
         margin-left: 3vw;
-        max-width: 30vw;
+        max-width: 34vw;
     }
 
     .infoText {
@@ -751,9 +753,9 @@ button:focus {
         margin-bottom: 4vw;
     }
 
-    .linkWrap .actualLink>p {
+    .linkWrap #actualLinkID,
+    .linkWrap #glitterLinkID {
         margin-right: auto;
-        color: rgb(239, 147, 147);
         font-size: 1.4vw;
     }
 
@@ -769,10 +771,15 @@ button:focus {
     .spacing-div {
         height: 15vh;
     }
+    .actual-content {
+        align-self: center;
+        max-height: 64%;
+        /*controls the height of the poster content container - how much space the poster items have in height*/
+    }
 
     .imgWrap {
         display: block;
-        width: 50vh;
+        width: 100vh;
         padding-left: 8vw;
     }
 
@@ -817,9 +824,8 @@ button:focus {
         margin-bottom: 4vw;
     }
 
-    .linkWrap .actualLink>p {
-        margin-right: auto;
-        color: rgb(239, 147, 147);
+    .linkWrap #actualLinkID,
+    .linkWrap #glitterLinkID {
         font-size: 1.4vw;
     }
 
@@ -869,24 +875,28 @@ button:focus {
     display: flex;
     margin: 0;
     padding: 0;
+    background-color:black;
     background-image: url(/assets/images/greenlight.jpg);
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: auto;
     background-position: top 0 right 0;
+    background-size: 170%;
     background-repeat: no-repeat;
-    background-size: 100% auto;
     border: none;
     overflow: auto;
     background-attachment: fixed;
     z-index: -2;
 }
 
-@media only screen and (max-width: 767px) {
-    .background-box {
-        background-position: top 0 left 0;
+
+@media only screen and (min-width: 768px) {
+    .background-box-archive {
+        background-position: top left;
+        background-size: cover;
         max-width: 100%;
-        height: auto;
     }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -894,8 +904,8 @@ button:focus {
         height: 100vh;
         width: auto;
         background-image: url(/assets/images/greenlight2.jpg);
-        background-repeat: no-repeat;
-        background-position: top 0 left 0;
+        background-position: left top, right top;
+        background-repeat: no-repeat, norepeat;
         background-size: 50% auto;
     }
 }
@@ -917,6 +927,7 @@ button:focus {
     margin-top: 0;
     padding: 0;
     border: none;
+    background-color: #0d0b0a;
     background-attachment: fixed;
     overflow: auto;
     z-index: -2;
@@ -935,8 +946,6 @@ button:focus {
 }
 
 .about-text-content {
-    background-color: rgba(0, 0, 0, 0.404);
-
     display: block;
     width: 100vw;
     text-align: center;
@@ -979,18 +988,12 @@ button:focus {
 @media only screen and (min-width: 321px) {
     .background-box-about {
         height: 1010px;
-        width: auto;
-        background-image: url(/assets/images/maskoffm.jpg);
         background-position: top 72px center;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
     }
 
     .about-text {
-        display: flex;
         margin-top: 280px;
         height: 560px;
-        overflow: auto;
     }
 
     .about-text-content>p {
@@ -1001,15 +1004,10 @@ button:focus {
 @media only screen and (min-width: 375px) {
     .background-box-about {
         height: 1050px;
-        width: auto;
-        background-image: url(assets/images/maskoffm.jpg);
         background-position: top 72px center;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
     }
 
     .about-text {
-        display: flex;
         margin-top: 310px;
     }
 }
@@ -1017,15 +1015,10 @@ button:focus {
 @media only screen and (min-width: 425px) {
     .background-box-about {
         height: 1080px;
-        width: auto;
-        background-image: url(/assets/images/maskoffm.jpg);
         background-position: top 72px center;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
     }
 
     .about-text {
-        display: flex;
         margin-top: 354px;
     }
 
@@ -1045,13 +1038,11 @@ button:focus {
         background-repeat: no-repeat;
     }
 
-    .about {
-        background-color: #100e0e;
-    }
 
     .about-text {
-        display: flex;
-        margin-top: 550px;
+        margin-top: 60vh; 
+        height: 100%;
+        background-color: #100e0e85;
     }
 
     .about-text-content>p {
@@ -1062,43 +1053,47 @@ button:focus {
 
 @media only screen and (min-width: 1024px) {
     .background-box-about {
-        height: 100rem;
+        min-height: 100vh;
+        height: 100%;
         width: auto;
         background-image: url(/assets/images/maskoff.jpg);
-        background-repeat: no-repeat;
-        background-position: top 0 center;
-        background-size: 100% auto;
+        background-position: top 98px center;
+        background-size: cover;
     }
 
     .about-text {
-        display: flex;
-        margin-top: 70%;
-        height: 1000px;
+        margin-top: 66vh;
+        height: 100%;
+        padding-bottom: 5vh;
         overflow: auto;
     }
 
     .about-text-content>p {
         padding: 0 6rem;
     }
+    .about-row {
+        margin-top: 98px;
+        margin-bottom: 20px;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
     .background-box-about {
-        height: 80rem;
+        min-height: 100vh;
+        height: 100%;
         width: auto;
         background-image: url(/assets/images/maskoff.jpg);
-        background-repeat: no-repeat;
         background-position: top 100px right 0;
         background-size: 50%;
     }
 
 
     .about-text {
-        display: flex;
         justify-content: left;
-        margin-top: 10%;
-        height: 1000px;
-        overflow: auto;
+        background-color: transparent;
+        margin-top: 33vh;
+        height: 100%;
     }
 
 
@@ -1106,25 +1101,23 @@ button:focus {
         padding-left: 5%;
         padding-right: 5%;
     }
+
+
 }
 
 @media only screen and (min-width: 1440px) {
     .background-box-about {
         height: 100vh;
         width: auto;
-        background-image: url(/assets/images/maskoff.jpg);
-        background-repeat: no-repeat;
         background-position: top 100px right 0;
         background-size: 50%;
     }
 
 
     .about-text {
-        display: flex;
         justify-content: left;
-        margin-top: 10%;
+        margin-top: 33vh;
         height: 100%;
-        overflow: auto;
     }
 
 
@@ -1153,7 +1146,8 @@ button:focus {
     margin: 0;
     padding: 0;
     background-image: url(/assets/images/speaker.jpg);
-    height: 1440px;
+    min-height: 80vh;
+    height: 100%;
     width: auto;
     background-position: top 0 left 0;
     background-attachment: fixed;
@@ -1232,6 +1226,12 @@ form h5 {
 #myCV {
     font-family: 'Julius Sans One', monospace;
     color: rgb(239, 147, 147);
+    cursor: pointer;
+}
+
+
+
+#myCV:hover {
     cursor: pointer;
 }
 
@@ -1346,7 +1346,8 @@ form h5 {
         margin: 0;
         padding: 0;
         background-image: url(/assets/images/speaker.jpg);
-        height: auto;
+        min-height: 80vh;
+        height: 100%;
         width: auto;
         background-position: top 0 left 0;
         background-attachment: fixed;
@@ -1380,12 +1381,12 @@ form h5 {
     }
 
     .axed {
-        padding: 3rem 2% 0 4%;
+        padding: 2rem 2% 0 4%;
     }
 
 
     .links {
-        padding: 8px 4% 3% 4%;
+        padding: 8px 4% 0 4%;
     }
 
     .download-col {
@@ -1445,7 +1446,7 @@ form h5 {
 /* -------------------------------- Footer */
 
 footer {
-    height: 10rem;
+    height: 20vh;
     background-color: rgb(66, 109, 110);
 }
 
