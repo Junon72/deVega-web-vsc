@@ -328,16 +328,7 @@ button:focus {
 /* --------- Poster image properties */
 
 /* Choreopop/ Glittergods image */
-#popImage {
-    width: 100%;
-    height: auto;
-    border-radius: 720px;
-    -webkit-border-radius: 720px;
-    -moz-border-radius: 720px;
-    -ms-border-radius: 720px;
-    -o-border-radius: 720px;
-}
-
+#popImage,
 #glitterImage {
     width: 100%;
     height: auto;
@@ -407,15 +398,12 @@ button:focus {
     text-align: justify;
 }
 
-.linkWrap #actualLinkID>p {
-    margin-right: auto;
-    color: rgb(239, 147, 147);
-}
-
+.linkWrap #actualLinkID>p,
 .linkWrap #glitterLinkID>p {
     margin-right: auto;
-    color: rgb(239, 147, 147);
+    color: rgb(255, 109, 109);
 }
+
 
 @media only screen and (max-width: 425px) {
 
@@ -598,8 +586,6 @@ button:focus {
 
     .linkWrap #actualLinkID>p,
     .linkWrap #glitterLinkID>p {
-        /*margin-right: auto;
-            color: rgb(239, 147, 147);*/
         font-size: 3vw;
     }
 
@@ -710,14 +696,9 @@ button:focus {
     }
 }
 
-.linkWrap .actualLink>p {
-    margin-right: auto;
-    color: rgb(239, 147, 147);
-    font-size: 2.4vw;
-}
 
 
-/*@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
 
     .spacing-div {
         height: 15vh;
@@ -784,30 +765,68 @@ button:focus {
 }
 
 @media only screen and (min-width: 1440px) {
-    .popInfo h2 u {
-        max-width: 35vw;
-        margin-top: 3vw;
-        font-size: 5vw;
-        letter-spacing: 8px;
+  
+    .spacing-div {
+        height: 15vh;
     }
 
-    .Info3d {
-        perspective: 250px;
+    .imgWrap {
+        display: block;
+        width: 50vh;
+        padding-left: 8vw;
+    }
 
+    #popImage {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    #glitterImage {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .popTitle h2 u {
+        display: relative;
+        font-size: 3vw;
+        letter-spacing: 5px;
+        margin-top: -4vw;
+        margin-left: 3vw;
+        max-width: 30vw;
+
+    }
+
+    .glitterTitle h2 u {
+        display: relative;
+        font-size: 3vw;
+        letter-spacing: 5px;
+        margin-top: -4vw;
+        margin-left: 3vw;
+        max-width: 30vw;
     }
 
     .infoText {
-        max-width: 55vw;
-        height: 100%;
-        padding-top: 16vw;
-        padding-left: 28vw;
-        font-size: 1vw;
-        text-align: left;
+        max-width: 42vw;
+        padding-top: 2vw;
+        font-size: 1.2vw;
+        margin-top: 1vw;
+        margin-left: 3vw;
     }
 
-    #actualLinkID {
-        margin-top: 1%;
-        font-size: 1vw;
+    .linkWrap {
+        margin-bottom: 4vw;
+    }
+
+    .linkWrap .actualLink>p {
+        margin-right: auto;
+        color: rgb(239, 147, 147);
+        font-size: 1.4vw;
+    }
+
+    .separator {
+        display: block;
+        width: auto;
+        height: 2vw;
     }
 }
 
