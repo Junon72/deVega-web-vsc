@@ -10,9 +10,6 @@ body {
     background-color: black;
 }
 
-html {
-    font-size: calc(1em+1vw);
-}
 
 .container-fluid {
     padding: 0;
@@ -148,11 +145,11 @@ button:focus {
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
-    transition: all .5 ease-in-out;
-    -webkit-transition: all .5 ease-in-out;
-    -moz-transition: all .5 ease-in-out;
-    -ms-transition: all .5 ease-in-out;
-    -o-transition: all .5 ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
 .logo:hover {
@@ -161,13 +158,15 @@ button:focus {
     color: black;
 }
 
-@media (max-width: 320px) {
+/* ------------- Media inquiries/ Navigation bar  */
+
+@media only screen and (max-width: 320px) {
     .logo {
         font-size: 1rem;
     }
 }
 
-@media (max-width: 425px) {
+@media only screen and (max-width: 425px) {
     .navbar-default .navbar-toggler .fas {
         font-size: 1.2rem;
     }
@@ -184,10 +183,24 @@ button:focus {
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    .title-row {
+        display: flex;
+        margin-top: 10%;
+    }
+
+    .navbar {
+        padding: 3% 3% 1% 3%;
+    }
+
+    .navbar-default .navbar-collapse .navbar-nav>li>a {
+        padding: 0 10fr;
+        font-weight: 300;
+    }
+}
 
 
-
-/* -------------------------------- Dividers  */
+/* -------------------------------- Divider Sections  */
 
 /* Divider  general  */
 .divider {
@@ -200,44 +213,56 @@ button:focus {
 }
 
 .quotation>h4 {
-    display: block;
     text-align: center;
+    display: flex;
+    justify-content: center;
     font-family: 'Nunito', sans-serif;
     font-style: italic;
     font-weight: 100;
-    letter-spacing: 4px;
-    margin: 0;
-    padding: 25px 10px 0 10px;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin: 6% 2% 3% 2%;
 }
 
 .reference>h6 {
-    display: block;
     text-align: center;
+    display: flex;
+    justify-content: center;
     font-family: 'Montserrat', sans-serif;
     /*font-size: 1.1em;*/
-    font-style: none;
     font-weight: 100;
     letter-spacing: 1px;
-    margin: 0;
-    padding-top: 17px;
-    padding-bottom: 25px;
+    font-size: .8rem;
+    margin: 0 0 6% 0;
 }
 
 /*  Divider 4   */
 
-.divider-four>.quotation>#quotation-four>h4 {
-    padding: 30px 10px 30px 10px;
+#quotation-four>h4 {
+    margin: 4% 0;
     font-style: inherit;
 }
 
-@media only screen and (min-width: 1024px) {
-    .divider {
-        height: 12vh;
+/* ------------- Media inquiries/ Dividers  */
+
+@media only screen and (min-width: 768px) {
+    .quotation>h4 {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        margin: 3% 2% 1.5% 2%;
+    }
+
+    .reference>h6 {
+        font-size: 1rem;
+        margin: 0;
+        margin: 0 0 3% 0;
     }
 }
-/* ---------------------------------------------- Sections  */
 
-/* --------------------------------  Home    */
+/* ---------------------------------------------- Page Sections  */
+
+/* Section 1 --------------------------------  Actual (Home)    */
 
 /* --------- Background/ general */
 
@@ -257,11 +282,12 @@ button:focus {
     z-index: -2;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .background-box {
         background-position: left 0;
     }
 }
+
 
 .home {
     padding: 0;
@@ -277,7 +303,7 @@ button:focus {
     margin-top: 98px;
 }
 
-/* Home --------------------------- Poster   */
+/* Actual (Home) --------------------------- Poster   */
 /* fadeing in the page content on load - https://stackoverflow.com/questions/11679567/using-css-for-fade-in-effect-on-page-load */
 
 
@@ -292,13 +318,15 @@ button:focus {
     overflow: auto;
 }
 
+/* ------------- Keyframe / Actual (Home) content appearing at load  */
+
 @keyframes fadein {
     from {
         display: none;
         opacity: 0;
     }
 
-    top {
+    to {
         display: block;
         opacity: 1;
     }
@@ -343,7 +371,6 @@ button:focus {
     color: rgba(253, 122, 247, 0.842);
     text-shadow: 0 0 1rem rgba(252, 41, 241, 0.842);
     font-family: "Arial BlackH", sans-serif;
-    text-emphasis: underline;
 }
 
 /* attribution tutor for text shadow - https://line25.com/tutorials/how-to-create-a-cool-anaglyhic-text-effect-with-css */
@@ -353,7 +380,6 @@ button:focus {
     left: 4px;
     top: 3px;
     color: rgb(84, 253, 239);
-    text-emphasis: underline;
 }
 
 .glitterTitle h2 u {
@@ -398,9 +424,12 @@ button:focus {
 .linkWrap a:hover,
 .linkWrap a:active {
     color: rgb(255, 109, 109);
-    text-decoration-color:rgb(255, 109, 109);
-    -moz-text-decoration-color:rgb(255, 109, 109);
+    text-decoration-color: rgb(255, 109, 109);
+    -moz-text-decoration-color: rgb(255, 109, 109);
+
 }
+
+/* ------------- Media inquiries/ Actual (Home) section  */
 
 @media only screen and (max-width: 425px) {
 
@@ -430,11 +459,6 @@ button:focus {
 
 
     .popTitle h2 u {
-        /*display: flex;
-    position: relative;
-    color: rgba(253, 122, 247, 0.842);
-    text-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.5);
-    font-family: "Arial BlackH", sans-serif;*/
         font-size: 10vw;
         letter-spacing: 5px;
         margin-top: -15vw;
@@ -443,11 +467,6 @@ button:focus {
 
 
     .glitterTitle h2 u {
-        /*display: flex;
-    position: relative;
-    color: rgba(247, 63, 103, 0.842);
-    text-shadow: 0 0 1rem rgba(255, 3, 3, 0.8);
-    font-family: "Arial BlackH", sans-serif;*/
         font-size: 8vw;
         letter-spacing: 5px;
         margin-top: -20vw;
@@ -456,15 +475,6 @@ button:focus {
 
 
     .infoText {
-        /*display: flex;
-    position: relative;
-    max-width: 100vw;
-    height: 100%;
-    padding-top: 4vw;
-    color: rgba(252, 250, 245);
-    text-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
-    font-family: "Montserrat", sans-serif;
-    text-align: justify;*/
         font-size: 3.4vw;
     }
 
@@ -483,6 +493,8 @@ button:focus {
 
 
 @media only screen and (max-width: 767px) {
+
+
     /* --------- Poster layout properties */
 
     .spacing-div {
@@ -526,11 +538,6 @@ button:focus {
 
 
     .popTitle h2 u {
-        /*display: flex;
-        position: relative;
-        color: rgba(253, 122, 247, 0.842);
-        text-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.5);
-        font-family: "Arial BlackH", sans-serif;*/
         font-size: 8vw;
         letter-spacing: 5px;
         margin-top: -15vw;
@@ -540,11 +547,6 @@ button:focus {
 
 
     .glitterTitle h2 u {
-        /*display: flex;
-        position: relative;
-        color: rgba(247, 63, 103, 0.842);
-        text-shadow: 0 0 1rem rgba(255, 3, 3, 0.8);
-        font-family: "Arial BlackH", sans-serif;*/
         font-size: 8vw;
         letter-spacing: 5px;
         margin-top: -20vw;
@@ -554,15 +556,7 @@ button:focus {
 
 
     .infoText {
-        /*display: flex;
-        position: relative;
-        max-width: 100vw;
-        height: 100%;
-        padding-top: 4vw;
-        color: rgba(252, 250, 245);
-        text-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
-        font-family: "Montserrat", sans-serif;
-        text-align: justify;*/
+
         width: 80%;
         font-size: 2.3vw;
         margin-left: 10%;
@@ -591,12 +585,12 @@ button:focus {
         flex-flow: column;
         height: 100vh;
         width: 100vw;
-        animation: textIn fadein 20s;
-        -webkit-animation: textIn fadein 20s;
-        animation-timing-function: cubic-bezier (.165, .84, 44, 1);
+        animation: fadein 20s;
+        -webkit-animation: fadein 20s;
+        animation-timing-function: cubic-bezier(.165, .84, 44, 1);
         animation-delay: 0s;
         overflow: auto;
-}
+    }
 
     @keyframes fadein {
         from {
@@ -667,7 +661,8 @@ button:focus {
         letter-spacing: 5px;
         margin-top: -7vw;
         max-width: 30vw;
-        margin-left: 6% !important;
+        margin-left: 3vw;
+
 
     }
 
@@ -716,11 +711,12 @@ button:focus {
         height: 20vw;
     }
 
+    .popTitle h2,
     .popTitle h2 {
         margin-left: -0.2vw;
     }
+
     .popTitle h2 u {
-        display: relative;
         font-size: 3vw;
         letter-spacing: 5px;
         margin-top: -4vw;
@@ -728,16 +724,10 @@ button:focus {
 
     }
 
-    .glitterTitle h2 {
-        margin-left: 1.2vw;
-    }
-
     .glitterTitle h2 u {
-        display: relative;
         font-size: 2.8vw;
         letter-spacing: 5px;
         margin-top: -4vw;
-        margin-left: 3vw;
         max-width: 34vw;
     }
 
@@ -746,7 +736,7 @@ button:focus {
         padding-top: 2vw;
         font-size: 1.2vw;
         margin-top: 1vw;
-        margin-left: 3vw;
+
     }
 
     .linkWrap {
@@ -767,10 +757,11 @@ button:focus {
 }
 
 @media only screen and (min-width: 1440px) {
-  
+
     .spacing-div {
         height: 15vh;
     }
+
     .actual-content {
         align-self: center;
         max-height: 64%;
@@ -794,21 +785,17 @@ button:focus {
     }
 
     .popTitle h2 u {
-        display: relative;
         font-size: 3vw;
         letter-spacing: 5px;
         margin-top: -4vw;
-        margin-left: 3vw;
         max-width: 30vw;
 
     }
 
     .glitterTitle h2 u {
-        display: relative;
-        font-size: 3vw;
+        font-size: 2.8vw;
         letter-spacing: 5px;
         margin-top: -4vw;
-        margin-left: 3vw;
         max-width: 30vw;
     }
 
@@ -817,7 +804,7 @@ button:focus {
         padding-top: 2vw;
         font-size: 1.2vw;
         margin-top: 1vw;
-        margin-left: 3vw;
+
     }
 
     .linkWrap {
@@ -836,7 +823,76 @@ button:focus {
     }
 }
 
-/* --------------------------------  Gallery   */
+@media only screen and (min-width: 2200px) {
+
+    .spacing-div {
+        height: 15vh;
+    }
+
+    .actual-content {
+        align-self: center;
+        max-height: 58%;
+        /*controls the height of the poster content container - how much space the poster items have in height*/
+    }
+
+    .imgWrap {
+        display: block;
+        width: 100vh;
+        padding-left: 10vw;
+    }
+
+    #popImage {
+        width: 18vw;
+        height: 18vw;
+    }
+
+    #glitterImage {
+        width: 18vw;
+        height: 18vw;
+    }
+
+    .popTitle h2 u {
+        font-size: 2.5vw;
+        letter-spacing: 5px;
+        margin-top: -3vw;
+        margin-left: 3.5vw;
+        max-width: 30vw;
+
+    }
+
+    .glitterTitle h2 u {
+        font-size: 2.1vw;
+        letter-spacing: 5px;
+        margin-top: -3vw;
+        max-width: 30vw;
+    }
+
+    .infoText {
+        max-width: 26.5vw;
+        padding-top: 2vw;
+        font-size: .8vw;
+        margin-top: -0.5vw;
+        margin-left: 3.5vw;
+
+    }
+
+    .linkWrap {
+        margin-bottom: 0;
+    }
+
+    .linkWrap #actualLinkID,
+    .linkWrap #glitterLinkID {
+        font-size: 1vw;
+    }
+
+    .separator {
+        display: block;
+        width: auto;
+        height: 2vw;
+    }
+}
+
+/* Section 2 --------------------------------  Gallery   */
 
 .background-box-gallery {
     margin-top: 0px;
@@ -852,6 +908,8 @@ button:focus {
     background-attachment: fixed;
     z-index: -2;
 }
+
+/* ------------- Media inquiries/ Gallery  */
 
 @media (max-width: 767px) {
     .background-box {
@@ -869,13 +927,13 @@ button:focus {
     margin-top: 98px;
 }
 
-/* --------------------------------  Archive   */
+/* Section 3 --------------------------------  Archive   */
 
 .background-box-archive {
     display: flex;
     margin: 0;
     padding: 0;
-    background-color:black;
+    background-color: black;
     background-image: url(/assets/images/greenlight.jpg);
     min-height: 100vh;
     height: 100%;
@@ -889,6 +947,7 @@ button:focus {
     z-index: -2;
 }
 
+/* ------------- Media inquiries/ Archive  */
 
 @media only screen and (min-width: 768px) {
     .background-box-archive {
@@ -921,7 +980,7 @@ button:focus {
     margin-top: 98px;
 }
 
-/* --------------------------------  About   */
+/* Section 4 --------------------------------  About   */
 
 .background-box-about {
     margin-top: 0;
@@ -962,6 +1021,8 @@ button:focus {
     margin-top: 98px;
     margin-bottom: 20px;
 }
+
+/* ------------- Media inquiries/ About  */
 
 @media only screen and (max-width: 320px) {
     .background-box-about {
@@ -1040,7 +1101,7 @@ button:focus {
 
 
     .about-text {
-        margin-top: 60vh; 
+        margin-top: 60vh;
         height: 100%;
         background-color: #100e0e85;
     }
@@ -1071,6 +1132,7 @@ button:focus {
     .about-text-content>p {
         padding: 0 6rem;
     }
+
     .about-row {
         margin-top: 98px;
         margin-bottom: 20px;
@@ -1128,7 +1190,7 @@ button:focus {
     }
 }
 
-/* --------------------------------  Contact   */
+/* Section 5 --------------------------------  Contact   */
 
 .contact {
     padding: 0;
@@ -1268,6 +1330,8 @@ form h5 {
     display: flex;
     flex-flow: column;
 }
+
+/* ------------- Media inquiries/ Contact  */
 
 @media only screen and (max-width: 425px) {
     .background-box-contact {
@@ -1421,28 +1485,6 @@ form h5 {
 
 }
 
-
-
-
-
-/* -------------------------------- Media inquiries - general */
-
-@media only screen and (min-width: 1200px) {
-    .title-row {
-        display: flex;
-        margin-top: 10%;
-    }
-
-    .navbar {
-        padding: 3% 3% 1% 3%;
-    }
-
-    .navbar-default .navbar-collapse .navbar-nav>li>a {
-        padding: 0 10fr;
-        font-weight: 300;
-    }
-}
-
 /* -------------------------------- Footer */
 
 footer {
@@ -1480,6 +1522,8 @@ footer {
     color: rgb(239, 147, 147);
     margin: 0 1rem;
 }
+
+/* ------------- Media inquiries/ Footer  */
 
 @media only screen and (max-width: 425px) {
     .col-social i {
