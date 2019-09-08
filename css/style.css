@@ -1283,7 +1283,7 @@ form h5 {
     display: flex;
     width: 100vw;
     justify-content: flex-end;
-    padding-right: 2%;
+    margin-right: 4%;
 }
 
 #myCV {
@@ -1483,7 +1483,9 @@ form h5 {
         display: flex;
         align-self: flex-end;
     }
-
+    .links {
+        margin-right: 2%;
+    }
 }
 
 /* -------------------------------- Footer */
