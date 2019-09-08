@@ -429,7 +429,6 @@ button:focus {
 }
 
 .infoText {
-    display: flex;
     position: relative;
     max-width: 100vw;
     height: 100%;
@@ -504,7 +503,7 @@ button:focus {
 
 
     .infoText {
-        font-size: 3.4vw;
+        font-size: .7rem;
     }
 
     .linkWrap {
@@ -515,13 +514,13 @@ button:focus {
 
     .linkWrap #actualLinkID,
     .linkWrap #glitterLinkID {
-        font-size: 4vw;
+        font-size: .9rem;
     }
 
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 426px) {
 
 
     /* --------- Poster layout properties */
@@ -1048,6 +1047,7 @@ button:focus {
 }
 
 .about-row {
+    position: relative;
     margin-top: 98px;
     margin-bottom: 20px;
 }
@@ -1063,6 +1063,7 @@ button:focus {
         background-size: 100% auto;
         background-repeat: no-repeat;
     }
+
 
     .about-text {
         display: flex;
