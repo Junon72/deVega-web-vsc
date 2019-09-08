@@ -741,11 +741,11 @@ button:focus {
 
     .linkWrap {
         margin-bottom: 4vw;
+
     }
 
     .linkWrap #actualLinkID,
     .linkWrap #glitterLinkID {
-        margin-right: auto;
         font-size: 1.4vw;
     }
 
@@ -770,7 +770,7 @@ button:focus {
 
     .imgWrap {
         display: block;
-        width: 100vh;
+        width: 100vw;
         padding-left: 8vw;
     }
 
@@ -803,7 +803,7 @@ button:focus {
         max-width: 42vw;
         padding-top: 2vw;
         font-size: 1.2vw;
-        margin-top: 1vw;
+        margin-top: -1vw;
 
     }
 
@@ -813,6 +813,7 @@ button:focus {
 
     .linkWrap #actualLinkID,
     .linkWrap #glitterLinkID {
+        margin-top: -1vw;
         font-size: 1.4vw;
     }
 
