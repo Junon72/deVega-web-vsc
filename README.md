@@ -140,7 +140,10 @@ About section features a background image and the personal information. On the b
 
 Contact pages feature a full screen background image; a speaker and a microphone, which are often used in de Vega's performances and represents his passion for communication, performing and music. The page also features a facial picture of de Vega, now bringing him closer and more visible. Beside the image is presented a text, encouraging the viewer to contact him for collaboration and for other inquiries. The page alos features a **contact form**, requiring the the name and email address of the person and providing a **text field for a message**. Under the contact form is placed a **call for action**, a *send button* for sending the message. The send button changes the color on hover, reflecting the color of the logo. At the bottom left corner the user can find a **download link** to download De Veag's C.V. in pdf format. The file opens in a blank window.
 
- ##Planned features### - 
+###Existing features###
+
+
+###Planned features###
 
 **Gallery**
 
@@ -155,19 +158,19 @@ On the bigger screens the right side of the page features the actual content. Ag
 
 ## Technologies Used
 
-- For the development of the site, **Visual Code Studio** was used with [*'open in prowser'*] (https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser) extension by **TechER**, and [*'css-auto-prefix'*] (https://marketplace.visualstudio.com/items?itemName=sporiley.css-auto-prefix) extenssion by **Sporiley** to ensure the css code functions properly on all browsers.
+-   For the development of the site, **Visual Code Studio** was used with [*'open in prowser'*](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser) extension by **TechER**, and [*'css-auto-prefix'*](https://marketplace.visualstudio.com/items?itemName=sporiley.css-auto-prefix) extenssion by **Sporiley** to ensure the css code functions properly on all browsers.
 
-- The project uses HTML, CSS and Java Script programming languages.
-    - Java Script use is limited to a simple functionality in navigation bar only. 
+-   The project uses HTML, CSS and Java Script programming languages.
+    -   Java Script use is limited to a simple functionality in navigation bar only. 
 
-- [BootsrapCDN] (https://www.bootstrapcdn.com/)
-    - **Bootsrap4** structures were used for responsivenes.
+-   [BootsrapCDN](https://www.bootstrapcdn.com/)
+    -   **Bootsrap4** structures were used for responsivenes.
     
-- [FontAwesome] (https://fontawesome.com) 
-    - **FontAwesome** icons were used in vavigation menu and social media links.
+-   FontAwesome](https://fontawesome.com) 
+    -   **FontAwesome** icons were used in vavigation menu and social media links.
 
-- [Google Fonts] (https://fonts.google.com/)
-    - **Google Fonts** provided the fonts used in the project.
+-   [Google Fonts](https://fonts.google.com/)
+    -   **Google Fonts** provided the fonts used in the project.
 
 
 
