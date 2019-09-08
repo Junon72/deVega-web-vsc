@@ -1069,6 +1069,7 @@ button:focus {
         margin-top: 250px;
         height: 500px;
         overflow: auto;
+        background-color: #100e0e85;
     }
 
     .about-text-content>p {
@@ -1079,12 +1080,16 @@ button:focus {
 @media only screen and (min-width: 321px) {
     .background-box-about {
         height: 1010px;
-        background-position: top 72px center;
+        background-image: url(/assets/images/maskoffm.jpg);
+        background-position: top 0 center;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
     }
 
     .about-text {
         margin-top: 280px;
         height: 560px;
+        background-color: #100e0e85;
     }
 
     .about-text-content>p {
