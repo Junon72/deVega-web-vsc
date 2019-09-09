@@ -350,11 +350,11 @@ button:focus {
 
 .actual-content {
     overflow: -moz-scrollbars-none;
-    }
+}
 
-    .actual-content::-webkit-scrollbar {
-        width: 0 !important
-    }
+.actual-content::-webkit-scrollbar {
+    width: 0 !important
+}
 
 
 /* ------------- Keyframe / Actual (Home) content appearing at load  */
@@ -630,7 +630,7 @@ button:focus {
         animation-timing-function: cubic-bezier(.165, .84, 44, 1);
         animation-delay: 0s;
         overflow: auto;
-}
+    }
 
     @keyframes fadein {
         from {
@@ -1201,7 +1201,7 @@ button:focus {
     .about-text {
         justify-content: left;
         background-color: transparent;
-        
+
         margin-top: 33vh;
         height: 100%;
     }
@@ -1210,11 +1210,12 @@ button:focus {
     .about-text-content>p {
         padding-left: 5%;
         padding-right: 5%;
-        color:  #0d0b0a;
+        color: #0d0b0a;
     }
 
     .background-box-about {
-        background-color:white;
+        background-color: white;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
