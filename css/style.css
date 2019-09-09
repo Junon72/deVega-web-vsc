@@ -347,18 +347,6 @@ button:focus {
     overflow: auto;
 }
 
-.actual-content {
-    overflow: -moz-scrollbars-none;
-}
-
-.actual-content {
-    -sms-overflow-style: none;
-}
-
-.actual-content::-webkit-scrollbar {
-    width: 1!important;
-}
-
 
 /* ------------- Keyframe / Actual (Home) content appearing at load  */
 
@@ -381,6 +369,19 @@ button:focus {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+.popPoster {
+    overflow: -moz-scrollbars-none;
+}
+
+.popPoster {
+    -sms-overflow-style: none;
+}
+
+.popPoster::-webkit-scrollbar {
+    width: 0!important;
+}
+
 
 /* --------- Poster image properties */
 
