@@ -2,7 +2,6 @@
 body {
     background-color: black;
     font-family: "Nunito", sans-serif
-
 }
 
 .wrapper {
@@ -11,8 +10,6 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    
-
 }
 
 .text {
