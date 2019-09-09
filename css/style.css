@@ -1218,7 +1218,7 @@ button:focus {
     .background-box-about {
         height: 100vh;
         width: auto;
-        background-position: top 100px right 0;
+        background-position: right 0 top 0;
         background-size: 50%;
     }
 
