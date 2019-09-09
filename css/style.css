@@ -925,15 +925,7 @@ button:focus {
 }
 
 .imageWrap {
-    overflow: -moz-scrollbars-none;
-}
-
-.mageWrap {
-    -sms-overflow-style: none;
-}
-
-.mageWrap::-webkit-scrollbar {
-    width: 0!important;
+    scrollbar-width: thin;
 }
 
 /* Section 2 --------------------------------  Gallery   */
