@@ -924,18 +924,6 @@ button:focus {
     }
 }
 
-.imageWrap {
-    overflow: -moz-scrollbars-none;
-}
-
-.mageWrap {
-    -sms-overflow-style: none;
-}
-
-.mageWrap::-webkit-scrollbar {
-    width: 0!important;
-}
-
 /* Section 2 --------------------------------  Gallery   */
 
 .background-box-gallery {
