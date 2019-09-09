@@ -46,32 +46,32 @@ After the first lanidng page, the visitor who has selected the Art option (in pl
 The pages are scrolling and divided in five separate sections:
 
 1. **Actual**
-    -  contains a 'poster' images with titles and short descriptions of ongoing projects, with a link to dedicated pages with more material, including videos, images and informative text. 
+    contains a 'poster' images with titles and short descriptions of ongoing projects, with a link to dedicated pages with more material, including videos, images and informative text. 
 
-    *The page is directed to type 1. user needs, who is looking for information about what is happening at the moment.*
+    -   *The page is directed to type 1. user needs, who is looking for information about what is happening at the moment.*
 
 2. **Gallery**
-    - contains a short promotional text and some interactive visual element to invite the user to visit the digtial gallery.
+    contains a short promotional text and some interactive visual element to invite the user to visit the digtial gallery.
         - this section has no content at the moment, only a background image to demarcate the section, give an idea of the planned color schema and layout. The background image in future is planned to be incorporated with some kind of interactive visual element promoting the gallery.
 
-        *The page is directed to type 2. and 3. user needs, who are interested of de Vega's work more broadly.* 
+        -   *The page is directed to type 2. and 3. user needs, who are interested of de Vega's work more broadly.* 
 
 3. **Archive**
-    - contains some selection of the archive material, 'teasers', to invite the user to visit the archived material from de Vega's previous projects and works.
+    contains some selection of the archive material, 'teasers', to invite the user to visit the archived material from de Vega's previous projects and works.
         - this section as well is curently without content. A background image is provided to demarcate the section and to give an idea of the eventual layout and color schema.
 
-       *The page is directed to type 2. and 3. user needs, who are interested of de Vega's work more broadly.*
+       -    *The page is directed to type 2. and 3. user needs, who are interested of de Vega's work more broadly.*
 
 
 4. **About**
-    - contains personal information of de Vega, his background, interest, inspiration and where he is based.
+    contains personal information of de Vega, his background, interest, inspiration and where he is based.
 
-    The page is directed to users in general, who are interested of de Vega's background and more personal information.
+    -   *The page is directed to users in general, who are interested of de Vega's background and more personal information.*
 
 5. **Contact**
-    - contains a face image of de Vega with an invitation text to contact and a contact from. Moreover, the page provides a link to a downloadable pdf of de Vega’s C.V.
+    contains a face image of de Vega with an invitation text to contact and a contact from. Moreover, the page provides a link to a downloadable pdf of de Vega’s C.V.
 
-     The page is directed to type 3. user needs, who are seeking to get in contact with de Vega.
+     -  *The page is directed to type 3. user needs, who are seeking to get in contact with de Vega.*
 
 ### About the visual design:
 
@@ -140,10 +140,10 @@ About section features a background image and the personal information. On the b
 
 Contact pages feature a full screen background image; a speaker and a microphone, which are often used in de Vega's performances and represents his passion for communication, performing and music. The page also features a facial picture of de Vega, now bringing him closer and more visible. Beside the image is presented a text, encouraging the viewer to contact him for collaboration and for other inquiries. The page alos features a **contact form**, requiring the the name and email address of the person and providing a **text field for a message**. Under the contact form is placed a **call for action**, a *send button* for sending the message. The send button changes the color on hover, reflecting the color of the logo. At the bottom left corner the user can find a **download link** to download De Veag's C.V. in pdf format. The file opens in a blank window.
 
-###Existing features###
+### Existing features
 
 
-###Planned features###
+### Planned features
 
 **Gallery**
 
@@ -193,6 +193,46 @@ On the bigger screens the right side of the page features the actual content. Ag
 - The content text was copied and modified to suit the context from the current web pages of de Vega at http://www.jesusdevega.com/
 
 ### Media
+
+#### Video
+
+Video provided by **Jesus de Vega**:
+
+-   Background video for the [**Index**](index.html) -  [intro.mp4](/assets/video/intro.mp4)
+
+
+#### Images
+
+
+**Alvin Poiana**:
+
+-   Background image for [**Actual** *(Home)*](/home.html) section - [redrain.jpg](/assets/images/redrain.jpg) 
+-   Poster image for [**Actual** *(Home)*](/home.html) content section *'Glittergods/ Stigma'* - [glittersq.jpg](/assets/images/glittersq.jpg)
+-   Background image for [**Gallery**](/home.html) section - [allred.jpg](/assets/images/allred.jpg)
+-   Background image for [**Archive**](/home.html) section - [greenlight.jpg](/assets/images/greenlight.jpg)
+-   Background image for [**Archive**](/home.html) section - large secreens - [greenlight2.jpg](/assets/images/greenlight2.jpg)
+
+
+[**Myscha Oreo - Photographer**](https://www.myschaoreo.com):
+
+-   Portrait image for [**Contact**](/home.html) section - [axed.jpg](/assets/images/axed.jpg)
+
+
+[**Bas de Brouwer**](https://www.basdebrouwer.com):
+
+-   Poster image for [**Actual** *(Home)*](/home.html) content section *'Choreopop'* - [blindpop.jpg](/assets/images/blindpop.jpg)
+-   Background image for [**About**](/home.html) section - [maskoff.jpg](/assets/images/maskoff.jpg)
+-   Background image for [**About**](/home.html) section - medium and small screens - [maskoffm.jpg](/assets/images/maskoffm.jpg)
+
+Images provided by **Jesus de Vega**:
+
+-   Digitalized portrait used for the favicon - [digijesus.png](/assets/images/digijesus.png)		
+-   Favicon image - [favicon.png](/assets/images/digijesus.png)
+-   Background image for [**Contact**](/home.html) section - [speaker.jpg](/assets/images/favicon.jpg)
+
+
+[**Pixpay.com**](https://www.pixapay.com)
+-   Background image for the [**section dividers/ quotation**](/home.html) - [paperw.jpg](/assets/images/paperw.jpg)	
 
 
 ### Acknowledgements
