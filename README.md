@@ -1,10 +1,13 @@
 # deVega web
 
+
+
 This website landing page proposal was created for the milestone project, as a part of the Full Stack Developer study program of Code Institute. 
 
 The web design is made for freelance choreographer Jesus de Vega, based in Amsterdam, the Netherlands. Besides choreographing de Vega is increasingly extending his practice to other disciplines on the art field, especially to the area of music. His current interest is to explore the merging of movement and sound as a facilitator of a creative process.
 
 Besides his artistic work, he is in process of developing a business proposal based on his artistic practices. This could entail some form of consultation services for businesses in creative industries, and teaching tools for creative thinking and creative processes in various business environments.
+
 
  
 ## UX
@@ -55,18 +58,22 @@ After the first lanidng page, the visitor who has selected the Art option (in pl
 
 The pages are scrolling and divided in five separate sections and a footer:
 
+
 1. **Actual**
+
     contains a 'poster' images with titles and short descriptions of ongoing projects, with a link to dedicated pages with more material, including videos, images and informative text. 
 
     -   *The page is directed for type 1. user needs, who is looking for information about what is happening at the moment.*
 
 2. **Gallery**
+
     contains a short promotional text and some interactive visual element to invite the user to visit the digtial gallery.
         - this section has no content at the moment, only a background image to demarcate the section, give an idea of the planned color schema and layout. The background image in future is planned to be incorporated with some kind of interactive visual element promoting the gallery.
 
         -   *The page is directed for type 2. and 3. user needs, who are interested of de Vega's work more broadly.* 
 
 3. **Archive**
+
     contains some selection of the archive material, 'teasers', to invite the user to visit the archived material from de Vega's previous projects and works.
         - this section as well is curently without content. A background image is provided to demarcate the section and to give an idea of the eventual layout and color schema.
 
@@ -74,21 +81,29 @@ The pages are scrolling and divided in five separate sections and a footer:
 
 
 4. **About**
+
     contains personal information of de Vega, his background, interest, inspiration and where he is based.
 
     -   *The page is directed for users in general, who are interested of de Vega's background and more personal information.*
 
 5. **Contact**
+
     contains a face image of de Vega with an invitation text to contact and a contact from. Moreover, the page provides a link to a downloadable pdf of de Vega’s C.V.
 
      -  *The page is directed for type 3. user needs, who are seeking to get in contact with de Vega.*
 
 6. **Footer**
+
     contains social media links.
 
     -   *The footer is directed for type 4. user needs, who are seeking to connect with de Veag in social media.*
 
+
+
+
 ### About the visual design:
+
+
 
 1. The design intends to tell a story through the background images, which provide an atmosphere, focus, color schema and compositional elements for the layout, and text used in the dividing elements between the main sections.
 The story is simultaniously revealing and hiding, informative and mysterious. It is meant to avoke curiosity and provide a pleasing and easy environment to navigate and to find what the user might be looking for. 
@@ -101,7 +116,10 @@ The story is simultaniously revealing and hiding, informative and mysterious. It
 
 5. Navigationbar is minimized, and together with the logo used as one of the binding visual elements through the pages. Other binding elements are the used colors in the general repeating elements, such as the titles and links.
 
+
+
 #### Fireframes:
+
 
 **First landing page**
 -   [Index page](/documents/index.pdf)
@@ -118,7 +136,11 @@ The story is simultaniously revealing and hiding, informative and mysterious. It
 
 -   [Navigation menu when open](/documents/navigation_menu.pdf)
 
+
+
 ## Features
+
+
 
 **Index**
 
@@ -127,10 +149,13 @@ The first page, which is the index page, features a full-page **background video
 
 The user can pick either *'My Art'* or *'Business'*.
 
+
+
 **_Business pages_**
 
 
 Business pages currently has no features, page with *'Under Construction'* message some content description and a **return link** are featured instead.
+
 
 
 **_Art pages_**
@@ -140,6 +165,8 @@ Art pages are scrolling pages with five distinct section. *'My Art'* pages featu
 
 Each page features a section title alinged on the center, in slightly stronger hue of the logo color.
 
+
+
 **Actual** (or *Home* section)
 
 
@@ -147,10 +174,13 @@ Actual section features a full screen **background image** of a man standing on 
 
 On the smaller screen the background image consist of the red paper rain only, and the poster images take over the full width of the screen.
 
+
+
 **Gallery**
 
 
 Gallery section only has a background image. The image is strongly red, dynamic and reflect the colors and compositional balance of the previous background image. The round shape of the poster images is as well reflected in the gallery background image. On the smaller screen, only the round object is seen from the background image. 
+
 
 
 **Archive**
@@ -158,10 +188,14 @@ Gallery section only has a background image. The image is strongly red, dynamic 
 
 Archive section has only a background image. The up reaching figure of the image changes the compositional direction from the horizontal of previous images to a vertical. The green 'light' complements the red of the previous page. On the bigger screens the image occupies only the left half of the screen. On middle size screens the image occupies the full screen. On small devices the image is simplified to an abstraction of green light without the figure.
 
+
+
 **About**
 
 
 About section features a background image and the personal information. On the big screens the image is place on the right half of the page,on the smaller screen the image is centered. On the big screens the text is featured in the 'empty' space on left. On smaller screens the **text scrolls over the image**. The background of the text is featured with a semitransparent layer to improve the contrast and readability against the background image.
+
+
 
 **Contact**
 
@@ -169,7 +203,10 @@ About section features a background image and the personal information. On the b
 Contact pages feature a full screen background image; a speaker and a microphone, which are often used in de Vega's performances and represents his passion for communication, performing and music. The page also features a facial picture of de Vega, now bringing him closer and more visible. Beside the image is presented a text, encouraging the viewer to contact him for collaboration and for other inquiries. The page alos features a **contact form**, requiring **name and email address** of the person and providing a **text field for a message**. Under the contact form is placed a *call for action*, a **send button** for sending the message. The send button changes the color on hover, reflecting the color of the logo. At the bottom left corner the user can find a **download link** to download De Veag's C.V. in pdf format. The file opens in a blank window.
 
 
+
 ### Existing features
+
+
 -   Background video - Is fully featured and responsive at [**Index**](/index.html) page 
 -   Navigation links - Exist and are responsive at [**Index**](/index.html) page
 -   Return links - exist and are functional at all under construction pages [**Business pages**](/business.html), [**More about 'Glittergods/ Stigma'**](/glittergods.html) and [**More about 'Choreopop'**](/choreopop.html)
@@ -184,25 +221,33 @@ Contact pages feature a full screen background image; a speaker and a microphone
 -   Contact form - Is featured on the [**Contact**](/home.html) section
 -   Name and email address - The contact form has field for both with a form validation function
 -   Text field - Is featured in the contact form with a validation function
--   
+
 
 
 ### Planned features
+
+
 
 **Gallery**
 
 
 An interactive feature incorporating the background image is in plans to promote the entry to the digital art gallery. The page will feature a centered promotional headline and a *call for action*, a **link to the digital gallery**. 
 
+
+
 **Archive**
 
 
 On the bigger screens the right side of the page features the actual content. Again, the page will feature a centered promotianl headline, text and a *call for action*, a **link to the archive page**. In the 'empty' space on left some selection of the archive imagery and text will be presented in 'artistic' way as a 'teaser'. On the mid and small size screens the archives a represented by one compelling image.
 
+
+
 **Contact**
 
 
 'SEND »»' button to submit user's message will be connected to the de Vega's e-mail address. The send button, after completing the sending operation, change to Sent and a 'Message succesfully sent!' message appears under the button. If the sending is not successfull and 'Sorry there was an error sending your message.' message would appear. - Java Script and php needed
+
+
 
 ## Technologies Used
 
@@ -224,12 +269,19 @@ On the bigger screens the right side of the page features the actual content. Ag
 
 ## Testing
 
+
 ### Testing the code
 
 **HTML** code was tested using [W3C Markup Validation Service](https://validator.w3.org/)
+
 **CSS** code was tested using [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 
+
+
+
 ### Testing the functionality and appearance manually
+
+
 
 ####I.  Index page
 
@@ -283,7 +335,10 @@ On the bigger screens the right side of the page features the actual content. Ag
 
     v.      Icon moves with the scrollin down the pages and stays visible at all times.
 
+
+
   **Actual - section**
+
 
 1.  *Background image*
 
@@ -311,20 +366,28 @@ On the bigger screens the right side of the page features the actual content. Ag
 
     v.     The back link on the In progress page takes back to the home page.
 
+
+
 **Gallery -section**
+
 
 1. *Background image*
 
     i.      Not resolved    -   The background image of Gallery section is responsive, but again the image is zoomed out of proportion on the iapd. Again, the layout on actual devices differes from the layout on the default Chrome developer tools device screens.
 
+
+
 **Archive section**
+
 
 1.  *Background image*
 
     i.      Not resolved    -   The background image of Gallery section is responsive, but again the image is zoomed out of proportion on the iapd. Again, the layout on actual devices differes from the layout on the default Chrome developer tools device screens.
 
 
+
 **About section**
+
 
 1.   *Background image*
 
@@ -336,7 +399,10 @@ On the bigger screens the right side of the page features the actual content. Ag
 
     iv.     Not resolved    -   On internet explorer on a big screen the content text alligns to the center.
 
+
+
 **Contact section**
+
 
 1.  *Background image*
 
@@ -361,7 +427,10 @@ On the bigger screens the right side of the page features the actual content. Ag
 
     i.      Clicking download link takes to a blank page where a C.V. in pdf format can be viewed and downloaded.
 
+
+
 **Footer**
+
 
 1.  *Social media icons/ links*
 
@@ -378,7 +447,10 @@ On the bigger screens the right side of the page features the actual content. Ag
 
 Note: In the current configuration, the pages do not meet all user needs as discussed at the [beginning of UX section](###-User-Stories). 
 
+
+
 ## Deployment
+
 
 deVega web project was developed using [**Visual Studio Code**](https://code.visualstudio.com/), and a local git repository. The Visual Studio Code was set up to push the repository to GitHub. GitHub was also used to publish/ deploy the pages.
 
@@ -387,9 +459,12 @@ To visit the pages use the link https://github.com/Junon72/deVegaweb.git.
 The project can be downloaded or cloned from the [project GitHub repository](https://github.com/Junon72/deVegaweb).
 
 
+
 ## Credits
 
+
 ### Content
+
 
 -   The content texts for [**Actual** *(Home)*](/home.html) section were copied and modified to suit the context from the current web pages of de Vega at http://www.jesusdevega.com/.
 
@@ -398,10 +473,12 @@ The project can be downloaded or cloned from the [project GitHub repository](htt
 -   The textx for page [**divider text/ quotations**](/home.html) were taken form https://artpromotive.com/2012/09/famous-inspirational-art-quotes.html.
 
 
+
 ### Media
 
 
 #### Video
+
 
 Video provided by **Jesus de Vega**:
 
@@ -409,6 +486,7 @@ Video provided by **Jesus de Vega**:
 
 
 #### Images
+
 
 [**Alwin Poiana** -Photographer](https://www.alwinpoiana.com):
 
@@ -451,6 +529,7 @@ Images provided by **Jesus de Vega**:
 
 
 ### Code
+
 
 -    The zoom effect of the links on index page on hover was taken from https://w3bits.com/css-image-hover-zoom/, wih cortesy to Rahul.
 
