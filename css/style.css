@@ -1201,6 +1201,7 @@ button:focus {
     .about-text {
         justify-content: left;
         background-color: transparent;
+        
         margin-top: 33vh;
         height: 100%;
     }
@@ -1209,9 +1210,11 @@ button:focus {
     .about-text-content>p {
         padding-left: 5%;
         padding-right: 5%;
+        color:  #0d0b0a;
     }
 
-
+    .background-box-about {
+        background-color:white;
 }
 
 @media only screen and (min-width: 1440px) {
