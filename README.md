@@ -530,7 +530,6 @@ Images provided by **Jesus de Vega**:
 
 ### Code
 
-
 -    The zoom effect of the links on index page on hover was taken from https://w3bits.com/css-image-hover-zoom/, wih cortesy to Rahul.
 
 -   Java Script code for the automatic closing of [**Navigation menu**](/home.html) when clicking on a menu item was copied and modified from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right.
