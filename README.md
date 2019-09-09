@@ -231,6 +231,7 @@ On the bigger screens the right side of the page features the actual content. Ag
 
 -   The content texts for [**Actual** *(Home)*](/home.html) section were copied and modified to suit the context from the current web pages of de Vega at http://www.jesusdevega.com/
 -   The content text for [**Actual** *(Home)*](/home.html) section were copied from the current web pages of de Vega About section at http://www.jesusdevega.com/about 
+-   The textx for page [**divider text/ quotations**](/home.html) were taken form https://artpromotive.com/2012/09/famous-inspirational-art-quotes.html
 
 ### Media
 
@@ -277,5 +278,9 @@ Images provided by **Jesus de Vega**:
 
 ### Code
 
+-   Java Script code for the automatic closing of [**Navigation menu**](/home.html) when clicking on a menu item was copied and modified from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right
 
+-   The text shadow effect in [**poster titles**](.home.html) were modified from the code provided at https://line25.com/tutorials/how-to-create-a-cool-anaglyphic-text-effect-with-css, written by Iggy
+
+-   The fade in effect of the page content on load was created with the helpful information on https://stackoverflow.com/questions/11679567/using-css-for-fade-in-effect-on-page-load, 
 ### Acknowledgements

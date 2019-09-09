@@ -333,7 +333,7 @@ button:focus {
 }
 
 /* Actual (Home) --------------------------- Poster   */
-/* fadeing in the page content on load - https://stackoverflow.com/questions/11679567/using-css-for-fade-in-effect-on-page-load */
+/* fadeing in the page content on load - https://stackoverflow.com/questions/11679567/using-css-for-fade-in-effect-on-page-load*/
 
 
 .actual-content {
@@ -402,7 +402,7 @@ button:focus {
     font-family: "Arial BlackH", sans-serif;
 }
 
-/* attribution tutor for text shadow - https://line25.com/tutorials/how-to-create-a-cool-anaglyhic-text-effect-with-css */
+/* attribution tutor for text shadow - https://line25.com/tutorials/how-to-create-a-cool-anaglyphic-text-effect-with-css, written by Iggy */
 .popTitle h2 u:after {
     content: "CHOREOPOP";
     position: absolute;
@@ -419,7 +419,7 @@ button:focus {
     font-family: "Arial BlackH", sans-serif;
 }
 
-/* attribution tutor for text shadow - https://line25.com/tutorials/how-to-create-a-cool-anaglyhic-text-effect-with-css */
+/* attribution tutor for text shadow - https://line25.com/tutorials/how-to-create-a-cool-anaglyhic-text-effect-with-css, written by Iggy */
 .glitterTitle h2 u:after {
     content: "GLITTERGODS/ STIGMA";
     position: absolute;
