@@ -1,28 +1,29 @@
 /* ---------    In progress pages */
-
-.wrapper-inprogress {
-    display: inline-block;
-    position: absolute;
+body {
     background-color: black;
+    font-family: "Nunito", sans-serif
+
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: wrap column;
     padding: 0;
-    margin: -5px;
     width: 100vw;
     height: 100vh;
+    
 
 }
 
-.text-inprogress {
-    color: blanchedalmond;
-    margin-top: 13%;
-    margin-left: 10%;
+.text {
+    color: rgb(253, 250, 245);
+    margin: 33vh 2rem 0 5%;
 }
 
-.linkWrapper-inprogress {
-    margin-top: 5%;
-    margin-left: 10%;
-
+.linkWrapper {
+    margin: 2rem 2rem 0 5%;
 }
 
-.backHome-inprogress {
+.backHome {
     color: lightskyblue;
 }
