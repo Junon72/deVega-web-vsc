@@ -15,7 +15,10 @@ The main purpose of the web pages is to give information for the visitors about 
 
 On a longer term, the website would also serve as an exhibition place and a digital art gallery for short digital art works/ creations in the future.
 
+
 ### Examples of potential visitors to the artistic pages and their needs:
+
+#### User Stories
 
 1. Visitor looking for information about latest projects. This could be audience, potential collaborators or promotors. They would be interested to see material from the works in from of text, images, sound and video. They might also look for some kind of calendar and or information of upcoming events.
 
@@ -331,13 +334,49 @@ On the bigger screens the right side of the page features the actual content. Ag
 
     iii.    Not resolved    -   The background image should be displayed in full length on smaller screens as well, behind the thext. Now the image is cut.
 
-2.  **Contact section**
+    iv.     Not resolved    -   On internet explorer on a big screen the content text alligns to the center.
 
-    
+**Contact section**
+
+1.  *Background image*
+
+    i.      Contact section background image behaves as expected; it responds to diffrent screen sizes and gives space for a solid color on smaller screens. 
+
+2.  *Portrait and the invitation text*
+
+    i.      Not resolved       -    The portrait respondes as expected on Chrome, but on actual iphone and Android phone, the image is stretched vertically. This does not happen on Chrome.
+
+    ii.     Not resolved        -   On Internet Explorer the image and text are pushed to the right into a narrow strip after the screen width exceeds a 1200px break point.
+
+3.  *Contact form*
+
+    i.      Contact form is responsive as expected. 
+    ii.     Not resolved     -       No way of knowing if the form's validation functions proper.
+
+4.  *Send »»*
+
+    i.      Send button behaves as expected on hover, changing the colors negative.
+
+5.  *Download C.V.*
+
+    i.      Clicking download link takes to a blank page where a C.V. in pdf format can be viewed and downloaded.
+
+**Footer**
+
+1.  *Social media icons/ links*
+
+    i.      Social media icons are responsive in their size.
+
+    ii.     The icons behave as expected on hover, shrinking and changing the color to orange.
+
+    iii.    Clicking the icon/ link to LinkedIn pages takes to the de Vega LinkedIn pages.
+
+    iv.     Clicking the icon/ link to Instagram pages takes to the de Vega Instagram pages.
+
+    v.      Clicking the icon/ link to Facebook pages takes to the de Vega Facebook pages.
 
 
-
-
+Note: In the current configuration, the pages do not meet all user needs as discussed at the [beginning of UX section](###-User-Stories). 
 
 ## Deployment
 
@@ -421,6 +460,3 @@ Images provided by **Jesus de Vega**:
 
 -   The fade in effect of the page content on load was created with the helpful information on https://stackoverflow.com/questions/11679567/using-css-for-fade-in-effect-on-page-load.
 
-
-
-### Acknowledgements
