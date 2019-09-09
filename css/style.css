@@ -246,7 +246,7 @@ button:focus {
 
 /* ------------- Media inquiries/ Dividers  */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     #quotation-four>h4 {
         margin: 12% 0;
     }
@@ -1093,7 +1093,7 @@ button:focus {
 @media only screen and (min-width: 321px) {
     .background-box-about {
         height: 1010px;
-        background-image: url(../assets/images/maskoffm.jpg);
+        background-image: url(../assets/images/maskoffl.jpg);
         background-position: top 0 center;
         background-size: 100% auto;
         background-repeat: no-repeat;
@@ -1141,8 +1141,8 @@ button:focus {
     .background-box-about {
         height: 1264px;
         width: 100vw;
-        background-image: url(../assets/images/maskoff.jpg);
-        background-position: top 94px center;
+        background-image: url(../assets/images/maskoffl.jpg);
+        background-position: top center;
         background-size: 100% auto;
         background-repeat: no-repeat;
     }
@@ -1165,8 +1165,8 @@ button:focus {
         min-height: 100vh;
         height: 100%;
         width: auto;
-        background-image: url(../assets/images/maskoff.jpg);
-        background-position: top 98px center;
+        background-image: url(../assets/images/maskoffl.jpg);
+        background-position: center top;
         background-size: cover;
     }
 
@@ -1193,8 +1193,8 @@ button:focus {
         min-height: 100vh;
         height: 100%;
         width: auto;
-        background-image: url(../assets/images/maskoff.jpg);
-        background-position: top 100px right 0;
+        background-image: url(../assets/images/maskoffl.jpg);
+        background-position: top right 0;
         background-size: 50%;
     }
 

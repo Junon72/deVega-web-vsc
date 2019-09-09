@@ -277,10 +277,37 @@ On the bigger screens the right side of the page features the actual content. Ag
 2. *Posters*
 
     i.      The posters fade in too slow on big screens. Reduces the fade in time.
-    ii.     The scrolling of the posters is not very smooth.
-    iii.    On small screens the text dissappears.
+    ii.     Not resolved    -   The scrolling of the posters is not very smooth.
+    iii.    On some screens the scrolling bars are very visible.
+    iv.     Not resoved     -   On small screens the text dissappears.
+    v.      Not resoved     -   The spacing of the text and the link on small screens is not optimal and looks different than the eventual layout on the small screen devices in Chrome developer tools. 
+
+3.  *Poster links*
+
+    i.      When clicking **SEE MORE »»** link on *Choreopop* poster section 'In Progress' page for *Choreopop* opens.
+    ii.     The back link on the In progress page takes back to the home page.
+    iii.    When clicking **SEE MORE »»** link on *Glittergods/ Stigma* poster section 'In Progress' page for *Glittergods/ Stigma* opens.
+    v.     The back link on the In progress page takes back to the home page.
+
+**Gallery -section**
+
+1. *Background image*
+
+    i.      Not resolved    -   The background image of Gallery section is responsive, but again the image is zoomed out of proportion on the iapd. Again, the layout on actual devices differes from the layout on the default Chrome developer tools device screens.
+
+**Archive section**
+
+1.  *Background image*
+
+    i.      Not resolved    -   The background image of Gallery section is responsive, but again the image is zoomed out of proportion on the iapd. Again, the layout on actual devices differes from the layout on the default Chrome developer tools device screens.
 
 
+**About section**
+
+1.   *Background image*
+
+    i.      Not resolved    -   The background image of Gallery section is responsive, but again the image is zoomed out of proportion on the iapd. Again, the layout on actual devices differes from the layout on the default Chrome developer tools device screens.
+    ii.     The background image on midsize screens was lowered slightl
 
 
 
