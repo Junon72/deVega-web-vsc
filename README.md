@@ -237,17 +237,21 @@ On the bigger screens the right side of the page features the actual content. Ag
 2. *Navigation logo*
 
     i.      The logo flows over the samll screen edges. The issue fixed by reducing the logo font-size on screens under 425px.
+
     ii.     The logo responds to the hover, changing the color schema to negative.
 
 3. *Navigation links*
 
     i.      Both links magnify on hover.
+
     ii.     Clicking the **Business** link opens the in progress page.
+
     iii.    Clicking the **My Art** link opens the **Home** landing.
 
 4. *Business in progress page*
 
     i.      The progress page text is responsive.
+
     ii.     The return link takes back to the index page.      
 
 ####II. Home Pages
@@ -255,17 +259,25 @@ On the bigger screens the right side of the page features the actual content. Ag
 1.  *Navigation logo*
 
     i.      The logo appears on the top of home page on the left corner.
+
     ii.     The logo responds to hover,changing the color schema to negative.
+
     iii.    Clicking the logo opens the index page again.
+
     iv.     Logo stays proportional on different screen sizes.
+
     v.      Logo moves with the scrollin down the pages and stays visible at all times.
 
 2. *Navigation*
 
     i.      Navigation icon appears on the top of home pages on the right corner.
+
     ii.     The icon changes to red on hover and magnifies slightly.
+
     iii.    On clicking a navigation menu opens.
+
     iv.     In changing the screen size, the icon stays on right side of the logo.
+
     v.      Icon moves with the scrollin down the pages and stays visible at all times.
 
   **Actual - section**
@@ -277,16 +289,23 @@ On the bigger screens the right side of the page features the actual content. Ag
 2. *Posters*
 
     i.      The posters fade in too slow on big screens. Reduces the fade in time.
+
     ii.     Not resolved    -   The scrolling of the posters is not very smooth.
+
     iii.    On some screens the scrolling bars are very visible.
+
     iv.     Not resoved     -   On small screens the text dissappears.
+
     v.      Not resoved     -   The spacing of the text and the link on small screens is not optimal and looks different than the eventual layout on the small screen devices in Chrome developer tools. 
 
 3.  *Poster links*
 
     i.      When clicking **SEE MORE »»** link on *Choreopop* poster section 'In Progress' page for *Choreopop* opens.
+
     ii.     The back link on the In progress page takes back to the home page.
+
     iii.    When clicking **SEE MORE »»** link on *Glittergods/ Stigma* poster section 'In Progress' page for *Glittergods/ Stigma* opens.
+
     v.     The back link on the In progress page takes back to the home page.
 
 **Gallery -section**
@@ -307,7 +326,15 @@ On the bigger screens the right side of the page features the actual content. Ag
 1.   *Background image*
 
     i.      Not resolved    -   The background image of Gallery section is responsive, but again the image is zoomed out of proportion on the iapd. Again, the layout on actual devices differes from the layout on the default Chrome developer tools device screens.
-    ii.     The background image on midsize screens was lowered slightl
+
+    ii.     Not resolved    -   When scrolling the pages, the scrolling of the About content can easily take over before the section has fully rolled to the top of the screen. This could be fixed with Java Script.
+
+    iii.    Not resolved    -   The background image should be displayed in full length on smaller screens as well, behind the thext. Now the image is cut.
+
+2.  **Contact section**
+
+    
+
 
 
 

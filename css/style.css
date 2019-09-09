@@ -1071,7 +1071,7 @@ button:focus {
         height: 900px;
         width: auto;
         background-image: url(../assets/images/maskoffm.jpg);
-        background-position: top 72px center;
+        background-position: center top 72px;
         background-size: 100% auto;
         background-repeat: no-repeat;
     }
@@ -1094,7 +1094,7 @@ button:focus {
     .background-box-about {
         height: 1010px;
         background-image: url(../assets/images/maskoffl.jpg);
-        background-position: top 0 center;
+        background-position: center top 0;
         background-size: 100% auto;
         background-repeat: no-repeat;
     }
@@ -1113,7 +1113,7 @@ button:focus {
 @media only screen and (min-width: 375px) {
     .background-box-about {
         height: 1050px;
-        background-position: top 72px center;
+        background-position: center top 72px;
     }
 
     .about-text {
@@ -1124,7 +1124,6 @@ button:focus {
 @media only screen and (min-width: 425px) {
     .background-box-about {
         height: 1080px;
-        background-position: top 72px center;
     }
 
     .about-text {
@@ -1194,7 +1193,7 @@ button:focus {
         height: 100%;
         width: auto;
         background-image: url(../assets/images/maskoffl.jpg);
-        background-position: top right 0;
+        background-position: right 0 top 0;
         background-size: 50%;
     }
 
