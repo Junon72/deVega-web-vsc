@@ -370,17 +370,6 @@ button:focus {
     overflow-y: auto;
 }
 
-.popPoster {
-    overflow: -moz-scrollbars-none;
-}
-
-.popPoster {
-    -sms-overflow-style: none;
-}
-
-.popPoster::-webkit-scrollbar {
-    width: 0!important;
-}
 
 
 /* --------- Poster image properties */
@@ -933,6 +922,18 @@ button:focus {
         width: auto;
         height: 2vw;
     }
+}
+
+.imageWrap {
+    overflow: -moz-scrollbars-none;
+}
+
+.mageWrap {
+    -sms-overflow-style: none;
+}
+
+.mageWrap::-webkit-scrollbar {
+    width: 0!important;
 }
 
 /* Section 2 --------------------------------  Gallery   */
