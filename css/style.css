@@ -289,6 +289,7 @@ button:focus {
         font-style: inherit;
     }
 }
+
 /* ---------------------------------------------- Page Sections  */
 
 /* Section 1 --------------------------------  Actual (Home)    */
@@ -347,6 +348,14 @@ button:focus {
     overflow: auto;
 }
 
+.actual-content {
+    overflow: -moz-scrollbars-none;
+    }
+
+    .actual-content::-webkit-scrollbar {
+        width: 0 !important
+    }
+
 
 /* ------------- Keyframe / Actual (Home) content appearing at load  */
 
@@ -369,7 +378,6 @@ button:focus {
     overflow-x: hidden;
     overflow-y: auto;
 }
-
 
 
 /* --------- Poster image properties */
@@ -477,7 +485,7 @@ button:focus {
         display: block;
         width: auto;
         height: 100%;
-        padding: 0 0 0 0;
+        padding: 0;
     }
 
     .separator {
@@ -616,8 +624,8 @@ button:focus {
         flex-flow: column;
         height: 100vh;
         width: 100vw;
-        animation: fadein 20s;
-        -webkit-animation: fadein 20s;
+        animation: fadein 14s;
+        -webkit-animation: fadein 14s;
         animation-timing-function: cubic-bezier(.165, .84, 44, 1);
         animation-delay: 0s;
         overflow: auto;
@@ -1521,6 +1529,7 @@ form h5 {
         display: flex;
         align-self: flex-end;
     }
+
     .links {
         margin-right: 2%;
     }
