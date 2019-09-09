@@ -222,9 +222,12 @@ On the bigger screens the right side of the page features the actual content. Ag
 ## Testing
 
 
+
 ## Deployment
 
+deVega web project was developed using [**Visual Studio Code**]()
 
+-   https://github.com/Junon72/deVegaweb.git
 ## Credits
 
 ### Content
