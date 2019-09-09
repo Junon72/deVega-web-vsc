@@ -221,69 +221,152 @@ On the bigger screens the right side of the page features the actual content. Ag
 
 ## Testing
 
+### Testing the code
+
+**HTML** code was tested using [W3C Markup Validation Service](https://validator.w3.org/)
+**CSS** code was tested using [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+
+### Testing the functionality and appearance manually
+
+####I.  Index page
+
+1. *Page load*
+
+    i.      The video and the content load with a delay and fade in as planned
+
+2. *Navigation logo*
+
+    i.      The logo flows over the samll screen edges. The issue fixed by reducing the logo font-size on screens under 425px.
+    ii.     The logo responds to the hover, changing the color schema to negative.
+
+3. *Navigation links*
+
+    i.      Both links magnify on hover.
+    ii.     Clicking the **Business** link opens the in progress page.
+    iii.    Clicking the **My Art** link opens the **Home** landing.
+
+4. *Business in progress page*
+
+    i.      The progress page text is responsive.
+    ii.     The return link takes back to the index page.      
+
+####II. Home Pages
+
+1.  *Navigation logo*
+
+    i.      The logo appears on the top of home page on the left corner.
+    ii.     The logo responds to hover,changing the color schema to negative.
+    iii.    Clicking the logo opens the index page again.
+    iv.     Logo stays proportional on different screen sizes.
+    v.      Logo moves with the scrollin down the pages and stays visible at all times.
+
+2. *Navigation*
+
+    i.      Navigation icon appears on the top of home pages on the right corner.
+    ii.     The icon changes to red on hover and magnifies slightly.
+    iii.    On clicking a navigation menu opens.
+    iv.     In changing the screen size, the icon stays on right side of the logo.
+    v.      Icon moves with the scrollin down the pages and stays visible at all times.
+
+  **Actual - section**
+
+1.  *Background image*
+
+    i.      Background image is responsive to different screen sizes on most parts. On I pad the background image is magnified out of proportions for some reason.
+
+2. *Posters*
+
+    i.      The posters fade in too slow on big screens. Reduces the fade in time.
+    ii.     The scrolling of the posters is not very smooth.
+    iii.    On small screens the text dissappears.
+
+
+
+
 
 
 ## Deployment
 
-deVega web project was developed using [**Visual Studio Code**]()
+deVega web project was developed using [**Visual Studio Code**](https://code.visualstudio.com/), and a local git repository. The Visual Studio Code was set up to push the repository to GitHub. GitHub was also used to publish/ deploy the pages.
 
--   https://github.com/Junon72/deVegaweb.git
+To visit the pages use the link https://github.com/Junon72/deVegaweb.git.
+
+The project can be downloaded or cloned from the [project GitHub repository](https://github.com/Junon72/deVegaweb).
+
+
 ## Credits
 
 ### Content
 
--   The content texts for [**Actual** *(Home)*](/home.html) section were copied and modified to suit the context from the current web pages of de Vega at http://www.jesusdevega.com/
--   The content text for [**Actual** *(Home)*](/home.html) section were copied from the current web pages of de Vega About section at http://www.jesusdevega.com/about 
--   The textx for page [**divider text/ quotations**](/home.html) were taken form https://artpromotive.com/2012/09/famous-inspirational-art-quotes.html
+-   The content texts for [**Actual** *(Home)*](/home.html) section were copied and modified to suit the context from the current web pages of de Vega at http://www.jesusdevega.com/.
+
+-   The content text for [**Actual** *(Home)*](/home.html) section were copied from the current web pages of de Vega About section at http://www.jesusdevega.com/about.
+
+-   The textx for page [**divider text/ quotations**](/home.html) were taken form https://artpromotive.com/2012/09/famous-inspirational-art-quotes.html.
+
 
 ### Media
+
 
 #### Video
 
 Video provided by **Jesus de Vega**:
 
--   Background video for the [**Index**](index.html) -  [intro.mp4](/assets/video/intro.mp4)
+-   Background video for the [**Index**](index.html) -  [intro.mp4](/assets/video/intro.mp4).
 
 
 #### Images
 
-
 [**Alwin Poiana** -Photographer](https://www.alwinpoiana.com):
 
--   Background image for [**Actual** *(Home)*](/home.html) section - [redrain.jpg](/assets/images/redrain.jpg) 
--   Poster image for [**Actual** *(Home)*](/home.html) content section *'Glittergods/ Stigma'* - [glittersq.jpg](/assets/images/glittersq.jpg)
--   Background image for [**Gallery**](/home.html) section - [allred.jpg](/assets/images/allred.jpg)
--   Background image for [**Archive**](/home.html) section - [greenlight.jpg](/assets/images/greenlight.jpg)
--   Background image for [**Archive**](/home.html) section - large secreens - [greenlight2.jpg](/assets/images/greenlight2.jpg)
+-   Background image for [**Actual** *(Home)*](/home.html) section - [redrain.jpg](/assets/images/redrain.jpg).
+
+-   Poster image for [**Actual** *(Home)*](/home.html) content section *'Glittergods/ Stigma'* - [glittersq.jpg](/assets/images/glittersq.jpg).
+
+-   Background image for [**Gallery**](/home.html) section - [allred.jpg](/assets/images/allred.jpg).
+
+-   Background image for [**Archive**](/home.html) section - [greenlight.jpg](/assets/images/greenlight.jpg).
+
+-   Background image for [**Archive**](/home.html) section - large secreens - [greenlight2.jpg](/assets/images/greenlight2.jpg).
 
 
 [**Myscha Oreo - Photographer**](https://www.myschaoreo.com):
 
--   Portrait image for [**Contact**](/home.html) section - [axed.jpg](/assets/images/axed.jpg)
+-   Portrait image for [**Contact**](/home.html) section - [axed.jpg](/assets/images/axed.jpg).
 
 
 [**Bas de Brouwer - Photographer**](https://www.basdebrouwer.com):
 
--   Poster image for [**Actual** *(Home)*](/home.html) content section *'Choreopop'* - [blindpop.jpg](/assets/images/blindpop.jpg)
--   Background image for [**About**](/home.html) section - [maskoff.jpg](/assets/images/maskoff.jpg)
--   Background image for [**About**](/home.html) section - medium and small screens - [maskoffm.jpg](/assets/images/maskoffm.jpg)
+-   Poster image for [**Actual** *(Home)*](/home.html) content section *'Choreopop'* - [blindpop.jpg](/assets/images/blindpop.jpg).
+
+-   Background image for [**About**](/home.html) section - [maskoff.jpg](/assets/images/maskoff.jpg).
+
+-   Background image for [**About**](/home.html) section - medium and small screens - [maskoffm.jpg](/assets/images/maskoffm.jpg).
+
 
 Images provided by **Jesus de Vega**:
 
--   Digitalized portrait used for the favicon - [digijesus.png](/assets/images/digijesus.png)		
--   Favicon image - [favicon.png](/assets/images/digijesus.png)
--   Background image for [**Contact**](/home.html) section - [speaker.jpg](/assets/images/favicon.jpg)
+-   Digitalized portrait used for the favicon - [digijesus.png](/assets/images/digijesus.png).		
+-   Favicon image - [favicon.png](/assets/images/digijesus.png).
+
+-   Background image for [**Contact**](/home.html) section - [speaker.jpg](/assets/images/favicon.jpg).
 
 
 [**Pixpay.com**](https://www.pixapay.com)
 
--   Background image for the [**section dividers/ quotation**](/home.html) - [paperw.jpg](/assets/images/paperw.jpg)	
+-   Background image for the [**section dividers/ quotation**](/home.html) - [paperw.jpg](/assets/images/paperw.jpg).
+
 
 ### Code
 
--   Java Script code for the automatic closing of [**Navigation menu**](/home.html) when clicking on a menu item was copied and modified from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right
+-    The zoom effect of the links on index page on hover was taken from https://w3bits.com/css-image-hover-zoom/, wih cortesy to Rahul.
 
--   The text shadow effect in [**poster titles**](.home.html) were modified from the code provided at https://line25.com/tutorials/how-to-create-a-cool-anaglyphic-text-effect-with-css, written by Iggy
+-   Java Script code for the automatic closing of [**Navigation menu**](/home.html) when clicking on a menu item was copied and modified from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right.
 
--   The fade in effect of the page content on load was created with the helpful information on https://stackoverflow.com/questions/11679567/using-css-for-fade-in-effect-on-page-load, 
+-   The text shadow effect in [**poster titles**](.home.html) were modified from the code provided at https://line25.com/tutorials/how-to-create-a-cool-anaglyphic-text-effect-with-css, written by Iggy.
+
+-   The fade in effect of the page content on load was created with the helpful information on https://stackoverflow.com/questions/11679567/using-css-for-fade-in-effect-on-page-load.
+
+
+
 ### Acknowledgements
