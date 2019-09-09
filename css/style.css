@@ -937,7 +937,7 @@ button:focus {
 .background-box-gallery {
     margin-top: 0px;
     padding: 0;
-    background-image: url(/assets/images/allred.jpg);
+    background-image: url(../assets/images/allred.jpg);
     height: 100vh;
     width: auto;
     background-position: top 0 right 10%;
@@ -974,7 +974,7 @@ button:focus {
     margin: 0;
     padding: 0;
     background-color: black;
-    background-image: url(/assets/images/greenlight.jpg);
+    background-image: url(../assets/images/greenlight.jpg);
     min-height: 100vh;
     height: 100%;
     width: auto;
@@ -1002,7 +1002,7 @@ button:focus {
     .background-box-archive {
         height: 100vh;
         width: auto;
-        background-image: url(/assets/images/greenlight2.jpg);
+        background-image: url(../assets/images/greenlight2.jpg);
         background-position: left top, right top;
         background-repeat: no-repeat, norepeat;
         background-size: 50% auto;
@@ -1069,7 +1069,7 @@ button:focus {
     .background-box-about {
         height: 900px;
         width: auto;
-        background-image: url(/assets/images/maskoffm.jpg);
+        background-image: url(../assets/images/maskoffm.jpg);
         background-position: top 72px center;
         background-size: 100% auto;
         background-repeat: no-repeat;
@@ -1092,7 +1092,7 @@ button:focus {
 @media only screen and (min-width: 321px) {
     .background-box-about {
         height: 1010px;
-        background-image: url(/assets/images/maskoffm.jpg);
+        background-image: url(../assets/images/maskoffm.jpg);
         background-position: top 0 center;
         background-size: 100% auto;
         background-repeat: no-repeat;
@@ -1140,7 +1140,7 @@ button:focus {
     .background-box-about {
         height: 1264px;
         width: 100vw;
-        background-image: url(/assets/images/maskoff.jpg);
+        background-image: url(../assets/images/maskoff.jpg);
         background-position: top 94px center;
         background-size: 100% auto;
         background-repeat: no-repeat;
@@ -1164,7 +1164,7 @@ button:focus {
         min-height: 100vh;
         height: 100%;
         width: auto;
-        background-image: url(/assets/images/maskoff.jpg);
+        background-image: url(../assets/images/maskoff.jpg);
         background-position: top 98px center;
         background-size: cover;
     }
@@ -1192,7 +1192,7 @@ button:focus {
         min-height: 100vh;
         height: 100%;
         width: auto;
-        background-image: url(/assets/images/maskoff.jpg);
+        background-image: url(../assets/images/maskoff.jpg);
         background-position: top 100px right 0;
         background-size: 50%;
     }
@@ -1254,7 +1254,7 @@ button:focus {
     box-shadow: inset 0 0 0 1440px rgba(250, 245, 240, 0.541);
     margin: 0;
     padding: 0;
-    background-image: url(/assets/images/speaker.jpg);
+    background-image: url(../assets/images/speaker.jpg);
     min-height: 80vh;
     height: 100%;
     width: auto;
@@ -1456,7 +1456,7 @@ form h5 {
         box-shadow: inset 0 0 0 1440px rgb(250, 245, 240, 0.541);
         margin: 0;
         padding: 0;
-        background-image: url(/assets/images/speaker.jpg);
+        background-image: url(../assets/images/speaker.jpg);
         min-height: 80vh;
         height: 100%;
         width: auto;
@@ -1513,7 +1513,7 @@ form h5 {
         box-shadow: inset 0 0 0 1440px rgb(250, 245, 240, 0.541);
         margin: 0;
         padding: 0;
-        background-image: url(/assets/images/speaker.jpg);
+        background-image: url(../assets/images/speaker.jpg);
         height: auto;
         min-width: auto;
         background-position: top 0 left 0;
