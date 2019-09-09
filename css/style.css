@@ -1141,7 +1141,7 @@ button:focus {
         height: 1264px;
         width: 100vw;
         background-image: url(../assets/images/maskoffl.jpg);
-        background-position: top center;
+        background-position: center top 0;
         background-size: 100% auto;
         background-repeat: no-repeat;
     }
@@ -1165,7 +1165,7 @@ button:focus {
         height: 100%;
         width: auto;
         background-image: url(../assets/images/maskoffl.jpg);
-        background-position: center top;
+        background-position: center top 0;
         background-size: cover;
     }
 
